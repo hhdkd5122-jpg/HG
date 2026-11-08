@@ -43,6 +43,20 @@ h1 em{font-style:italic;font-weight:700;color:var(--zest)}
 .hs .t b{color:#fff;display:block;font-size:21px}
 .hs .t i{font-style:normal;color:#8fa79f;font-size:15px}
 
+/* BRAND */
+.brand{display:flex;align-items:center;gap:22px;margin-bottom:26px}
+.brand .logo{height:96px;width:auto;border-radius:14px;background:#fff;padding:8px}
+.brand .uni{font-family:Fraunces,serif;font-weight:800;font-size:40px;line-height:1;letter-spacing:.01em}
+.brand .col{font-size:17px;font-weight:800;letter-spacing:.3em;text-transform:uppercase;color:var(--berga);margin-top:8px}
+.brand .bar{width:3px;height:70px;background:linear-gradient(var(--berga),var(--zest));border-radius:3px}
+.brand .kick{font-weight:700;letter-spacing:.28em;font-size:17px;color:#9fb5ad;text-transform:uppercase;line-height:1.6}
+.zest{position:absolute;left:0;right:0;bottom:0;height:10px;background:linear-gradient(90deg,var(--leaf2),var(--berga) 35%,var(--zest) 65%,var(--coral))}
+body:before{content:"";position:absolute;inset:740px 0 0 0;background:
+  radial-gradient(700px 500px at 0% 30%,rgba(185,208,42,.10),transparent 70%),
+  radial-gradient(800px 600px at 100% 55%,rgba(255,201,60,.10),transparent 70%),
+  radial-gradient(700px 500px at 10% 85%,rgba(47,163,124,.08),transparent 70%);pointer-events:none}
+section,.sec-h{position:relative}
+
 /* SECTION HEADERS */
 .sec-h{margin:34px 96px 0;display:flex;align-items:flex-end;gap:24px}
 .sec-h .n{font-family:Fraunces,serif;font-weight:900;font-size:100px;line-height:.78;color:var(--berga);-webkit-text-stroke:2px var(--ink)}
@@ -110,14 +124,24 @@ h1 em{font-style:italic;font-weight:700;color:var(--zest)}
 .st .k{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:var(--berga);color:var(--ink);font-weight:900;font-family:Fraunces,serif;font-size:22px}
 .st:not(:last-child):after{content:"";position:absolute;right:-12px;top:34px;width:10px;height:10px;border-top:3px solid var(--berga);border-right:3px solid var(--berga);transform:rotate(45deg)}
 
-footer{position:absolute;left:0;right:0;bottom:0;height:240px;background:var(--ink);color:#a7bab3;padding:22px 96px;display:grid;grid-template-columns:1fr 330px;gap:48px}
-footer h5{font-size:15px;letter-spacing:.3em;text-transform:uppercase;color:var(--berga);margin-bottom:10px}
-footer ol{columns:4;column-gap:32px;font-size:12.4px;line-height:1.3;padding-left:22px}
-footer li{break-inside:avoid;margin-bottom:3px}
-footer li i{color:#e6efe9}
-.fr{border-left:2px solid rgba(255,255,255,.12);padding-left:40px;font-size:17px}
-.fr .nm{font-family:Fraunces,serif;color:#fff;font-size:32px;font-weight:800;line-height:1.1}
-.fr .warn{margin-top:16px;font-size:14px;line-height:1.35;color:#c8d6d0;background:rgba(255,255,255,.06);border-radius:14px;padding:12px 14px}
+footer{position:absolute;left:0;right:0;bottom:0;height:238px;background:var(--ink);color:#a7bab3;padding:26px 96px;display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr) 560px;gap:50px;align-items:center}
+footer:before{content:"";position:absolute;left:0;right:0;top:0;height:8px;background:linear-gradient(90deg,var(--leaf2),var(--berga) 35%,var(--zest) 65%,var(--coral))}
+.f-brand{display:flex;gap:26px;align-items:center}
+.f-brand .logo{height:120px;border-radius:16px;background:#fff;padding:10px}
+.f-brand .nm{font-family:Fraunces,serif;color:#fff;font-size:40px;font-weight:800;line-height:1.05}
+.f-brand .uni{font-size:19px;font-weight:700;color:var(--berga);letter-spacing:.06em;margin-top:6px}
+.f-brand .warn{margin-top:14px;font-size:15px;line-height:1.35;color:#c8d6d0;background:rgba(255,255,255,.06);border-radius:14px;padding:10px 14px;max-width:640px}
+.f-brand .warn b{color:var(--zest)}
+.f-key h5{font-size:15px;letter-spacing:.3em;text-transform:uppercase;color:var(--berga);margin-bottom:10px}
+.f-key ul{list-style:none;columns:2;column-gap:24px;font-size:15.5px;line-height:1.55;color:#c8d6d0}
+.f-key b{color:#fff}
+.f-qr{display:flex;align-items:center;gap:26px;justify-content:flex-end}
+.qrbox{position:relative;background:#fff;padding:14px;border-radius:22px;box-shadow:0 0 0 6px rgba(185,208,42,.35)}
+.qrbox>svg{display:block}
+.qrfruit{position:absolute;left:50%;top:50%;width:52px;height:52px;margin:-26px 0 0 -26px;background:#fff;border-radius:14px;display:grid;place-items:center}
+.qrtxt{display:flex;flex-direction:column;gap:8px;font-size:17px;color:#c8d6d0;line-height:1.3;max-width:260px;order:-1;text-align:right}
+.qrtxt .big{font-family:Fraunces,serif;font-weight:800;font-size:38px;line-height:1.02;color:#fff}
+.qrtxt .arrow{display:none}
 </style>
 </head>
 <body>
@@ -174,10 +198,15 @@ footer li i{color:#e6efe9}
   </svg>
 
   <div class="top">
-    <div class="kicker">Genetics · Prevention · Nutraceuticals</div>
+    <div class="brand">
+      <img class="logo" src="logo.png" alt="" onerror="this.remove()">
+      <div><div class="uni">Al Ain University</div><div class="col">College of Pharmacy</div></div>
+      <span class="bar"></span>
+      <div class="kick">Genetics · Prevention<br>Nutraceuticals</div>
+    </div>
     <h1>Before the <em>Statin</em></h1>
     <div class="sub">Detecting genetic and early cardiometabolic risk at 15–18, and testing <i>Citrus bergamot</i> as a first step</div>
-    <div class="byline"><span class="name">Noor Al Ahmad</span><span class="d"></span><span>Clinical Pharmacy</span><span class="d"></span><span>Evidence review &amp; proposed RCT</span></div>
+    <div class="byline"><span class="name">Noor Al Ahmad</span><span class="d"></span><span>Al Ain University, UAE</span><span class="d"></span><span>Evidence review &amp; proposed RCT</span></div>
   </div>
 
   <div class="heroStats">
@@ -185,6 +214,7 @@ footer li i{color:#e6efe9}
     <div class="hs"><div class="v">≈46<small>%</small></div><div class="t"><b>lower risk with a healthy lifestyle</b>even in people with high genetic risk <i>· Khera, NEJM 2016</i></div></div>
     <div class="hs"><div class="v">−40<small> mg/dL</small></div><div class="t"><b>LDL-C with bergamot</b>pooled adult RCTs, low certainty <i>· Chambari, Food Sci Nutr 2026</i></div></div>
   </div>
+  <div class="zest"></div>
 </section>
 
 <!-- ================= 01 WHY EARLY ================= -->
@@ -361,33 +391,30 @@ footer li i{color:#e6efe9}
 </section>
 
 <footer>
-  <div>
-    <h5>References</h5>
-    <ol>
-      <li>Ference BA, et al. Long-term exposure to lower LDL-C beginning early in life and CHD risk: a Mendelian randomization analysis. <i>J Am Coll Cardiol</i> 2012;60:2631–9.</li>
-      <li>Ference BA, et al. LDL causes atherosclerotic cardiovascular disease. EAS consensus. <i>Eur Heart J</i> 2017;38:2459–72.</li>
-      <li>Khera AV, et al. Genetic risk, adherence to a healthy lifestyle, and coronary disease. <i>N Engl J Med</i> 2016;375:2349–58.</li>
-      <li>Jacobs DR Jr, et al. Childhood cardiovascular risk factors and adult cardiovascular events. <i>N Engl J Med</i> 2022;386:1877–88.</li>
-      <li>NHLBI Expert Panel. Integrated guidelines for cardiovascular health and risk reduction in children and adolescents. <i>Pediatrics</i> 2011;128 Suppl 5:S213–56.</li>
-      <li>Kronenberg F, et al. Lipoprotein(a) in atherosclerotic CVD and aortic stenosis: EAS consensus. <i>Eur Heart J</i> 2022;43:3925–46.</li>
-      <li>Chambari M, et al. Bergamot supplementation and CVD risk factors: SR &amp; MA. <i>Food Sci Nutr</i> 2026;14:e72357. doi:10.1002/fsn3.72357</li>
-      <li>Sadeghi-Dehsahraei H, et al. Bergamot and lipid profiles: SR &amp; MA of RCTs. <i>Phytother Res</i> 2022;36:4409–24. doi:10.1002/ptr.7647</li>
-      <li>Osadnik T, et al. Network meta-analysis of nutraceuticals on lipid profile. <i>Pharmacol Res</i> 2022;183:106402. doi:10.1016/j.phrs.2022.106402</li>
-      <li>Gliozzi M, et al. BPF enhances rosuvastatin effect on LDL-C. <i>Int J Cardiol</i> 2013. doi:10.1016/j.ijcard.2013.08.125</li>
-      <li>Mollace V, et al. Lecithin formulation of BPF in T2DM with hyperlipaemia. <i>Endocr Metab Immune Disord Drug Targets</i> 2019. doi:10.2174/1871530319666181203151513</li>
-      <li>Capomolla AS, et al. Bergamot polyphenols in metabolic syndrome. <i>Nutrients</i> 2019;11:1271. doi:10.3390/nu11061271</li>
-      <li>Rondanelli M, et al. Bergamot phytosome, visceral fat and lipids. <i>Phytother Res</i> 2021;35:2045–56. doi:10.1002/ptr.6950</li>
-      <li>Ferro Y, et al. Bergamot and wild cardoon reduce liver steatosis. <i>Front Endocrinol</i> 2020;11:494. doi:10.3389/fendo.2020.00494</li>
-      <li>Fogacci F, et al. ANEMONE study, polygenic hypercholesterolaemia. <i>Nutrients</i> 2022;14:2099. doi:10.3390/nu14102099</li>
-      <li>Stonehouse W, et al. Nutraceutical combination and LDL-C: RCT. <i>Atherosclerosis</i> 2025;403:119177. doi:10.1016/j.atherosclerosis.2025.119177</li>
-      <li>Guardamagna O, et al. Red yeast rice and policosanols in hypercholesterolaemic children. <i>Nutr Metab Cardiovasc Dis</i> 2011;21:424–9.</li>
-      <li>Cicero AFG, et al. Nutraceuticals in dyslipidemia: which, when, and for whom? <i>Curr Atheroscler Rep</i> 2021. doi:10.1007/s11883-021-00955-y</li>
-    </ol>
+  <div class="f-brand">
+    <img class="logo" src="logo.png" alt="" onerror="this.remove()">
+    <div>
+      <div class="nm">Noor Al Ahmad</div>
+      <div class="uni">Al Ain University · College of Pharmacy</div>
+      <div class="warn"><b>Safety note:</b> bergamot is a supplement, not an approved therapy. Teens with monogenic FH or very high LDL-C follow guideline statin care.</div>
+    </div>
   </div>
-  <div class="fr">
-    <div class="nm">Noor Al Ahmad</div>
-    <div style="margin-top:4px">Clinical Pharmacy</div>
-    <div class="warn"><b style="color:var(--berga)">Safety note:</b> bergamot is a supplement, not an approved therapy. Teens with monogenic FH or very high LDL-C follow guideline statin care.</div>
+  <div class="f-key">
+    <h5>Key sources</h5>
+    <ul>
+      <li><b>Ference</b> JACC 2012 · EHJ 2017</li>
+      <li><b>Khera</b> NEJM 2016</li>
+      <li><b>Jacobs (i3C)</b> NEJM 2022</li>
+      <li><b>Chambari</b> Food Sci Nutr 2026</li>
+      <li><b>Sadeghi-Dehsahraei</b> Phytother Res 2022</li>
+      <li><b>Osadnik</b> Pharmacol Res 2022</li>
+      <li><b>NHLBI</b> Pediatrics 2011 · <b>EAS Lp(a)</b> 2022</li>
+      <li>+ 8 randomised trials (section 04)</li>
+    </ul>
+  </div>
+  <div class="f-qr">
+    <div class="qrbox"><svg width="176" height="176" viewBox="0 0 530 530" class="segno"><path transform="scale(10)" class="qrline" stroke="#0a2621" d="M0 0.5h7m1 0h2m3 0h2m1 0h2m2 0h2m1 0h1m1 0h1m2 0h5m2 0h2m3 0h3m3 0h7m-53 1h1m5 0h1m1 0h1m4 0h2m3 0h1m1 0h1m2 0h2m1 0h2m3 0h1m1 0h1m4 0h1m2 0h3m2 0h1m5 0h1m-53 1h1m1 0h3m1 0h1m1 0h2m2 0h3m2 0h1m2 0h2m2 0h3m4 0h1m4 0h1m2 0h2m2 0h1m2 0h1m1 0h3m1 0h1m-53 1h1m1 0h3m1 0h1m4 0h1m1 0h1m1 0h1m2 0h1m6 0h2m2 0h2m2 0h3m1 0h1m3 0h2m1 0h1m1 0h1m1 0h3m1 0h1m-53 1h1m1 0h3m1 0h1m2 0h1m2 0h2m1 0h1m2 0h1m1 0h1m1 0h1m1 0h7m1 0h1m1 0h1m2 0h1m1 0h1m1 0h2m3 0h1m1 0h3m1 0h1m-53 1h1m5 0h1m1 0h1m1 0h1m3 0h1m4 0h2m1 0h3m3 0h2m3 0h3m1 0h4m1 0h1m3 0h1m5 0h1m-53 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-45 1h1m1 0h1m2 0h2m1 0h2m2 0h1m2 0h2m3 0h2m4 0h1m1 0h6m1 0h2m-43 1h3m1 0h1m1 0h1m2 0h3m1 0h1m1 0h2m2 0h1m1 0h6m3 0h5m4 0h7m2 0h3m-53 1h2m3 0h1m1 0h3m1 0h1m3 0h1m2 0h1m4 0h1m1 0h2m1 0h1m2 0h1m3 0h2m3 0h3m5 0h3m1 0h1m-53 1h1m1 0h1m1 0h1m1 0h3m1 0h3m1 0h1m1 0h1m1 0h2m1 0h3m2 0h3m1 0h4m1 0h2m1 0h1m1 0h1m2 0h9m-51 1h3m4 0h3m1 0h1m2 0h1m5 0h2m1 0h1m1 0h1m2 0h1m1 0h3m1 0h1m1 0h1m1 0h1m1 0h1m3 0h1m3 0h1m1 0h1m-52 1h2m2 0h6m9 0h2m1 0h1m6 0h2m1 0h7m1 0h2m2 0h1m1 0h3m1 0h1m-47 1h2m1 0h1m2 0h1m5 0h2m1 0h1m1 0h2m1 0h1m5 0h2m3 0h1m1 0h1m1 0h5m1 0h1m2 0h3m1 0h1m-53 1h1m3 0h1m1 0h1m1 0h2m2 0h4m1 0h1m2 0h2m4 0h1m3 0h1m2 0h3m1 0h2m1 0h1m2 0h1m1 0h3m1 0h2m-51 1h4m1 0h1m8 0h1m1 0h1m1 0h1m3 0h1m5 0h1m2 0h2m1 0h2m1 0h1m1 0h1m3 0h2m2 0h1m1 0h1m1 0h1m-50 1h1m1 0h1m1 0h1m3 0h7m1 0h1m1 0h5m2 0h1m1 0h1m3 0h1m1 0h2m1 0h1m3 0h1m1 0h2m1 0h6m-52 1h1m2 0h2m4 0h3m1 0h2m3 0h3m7 0h9m3 0h2m4 0h1m1 0h1m1 0h2m-53 1h7m1 0h1m2 0h3m2 0h1m1 0h1m2 0h2m1 0h1m1 0h1m3 0h2m2 0h1m1 0h1m7 0h1m1 0h2m1 0h2m-51 1h2m5 0h2m2 0h1m3 0h3m1 0h1m3 0h1m1 0h1m1 0h1m1 0h1m1 0h6m3 0h2m4 0h1m2 0h1m1 0h1m-52 1h1m2 0h4m2 0h1m2 0h1m2 0h5m1 0h4m1 0h1m1 0h2m1 0h1m4 0h2m4 0h1m1 0h5m1 0h1m1 0h1m-49 1h2m4 0h1m1 0h1m1 0h1m1 0h1m1 0h2m2 0h3m1 0h5m2 0h4m5 0h2m4 0h4m-52 1h3m1 0h8m2 0h2m1 0h1m7 0h1m3 0h1m1 0h3m2 0h2m1 0h1m1 0h1m1 0h1m1 0h3m1 0h2m-50 1h1m1 0h2m2 0h1m1 0h1m4 0h1m1 0h1m6 0h3m1 0h2m1 0h2m1 0h2m1 0h2m1 0h3m1 0h3m1 0h1m1 0h1m1 0h2m-49 1h6m1 0h6m1 0h1m1 0h1m1 0h1m1 0h6m4 0h5m2 0h1m2 0h7m1 0h1m-52 1h1m1 0h2m3 0h2m2 0h2m3 0h3m4 0h1m3 0h1m2 0h4m2 0h1m3 0h4m3 0h1m2 0h2m-51 1h1m1 0h1m1 0h1m1 0h1m1 0h1m2 0h2m1 0h3m2 0h2m1 0h1m1 0h1m1 0h4m2 0h1m1 0h1m1 0h1m2 0h4m1 0h1m1 0h3m-51 1h3m1 0h1m3 0h1m2 0h2m1 0h1m1 0h1m2 0h1m3 0h2m3 0h1m2 0h1m1 0h1m4 0h5m1 0h1m3 0h2m1 0h1m-48 1h5m3 0h7m1 0h1m3 0h6m3 0h2m1 0h1m5 0h1m1 0h5m2 0h1m-52 1h2m1 0h2m2 0h1m1 0h1m2 0h1m1 0h1m3 0h1m3 0h2m3 0h1m1 0h1m2 0h1m3 0h2m1 0h1m2 0h1m1 0h3m1 0h1m1 0h1m1 0h1m-53 1h2m1 0h1m1 0h2m2 0h1m3 0h1m2 0h2m1 0h4m1 0h2m1 0h1m3 0h1m1 0h1m4 0h1m1 0h1m1 0h1m2 0h1m1 0h2m-48 1h2m1 0h2m1 0h4m1 0h1m2 0h6m2 0h1m1 0h1m1 0h3m3 0h1m3 0h4m2 0h1m2 0h1m1 0h2m1 0h1m-49 1h1m2 0h3m1 0h1m2 0h3m1 0h1m1 0h1m1 0h5m1 0h6m2 0h4m7 0h1m2 0h4m-52 1h1m1 0h1m1 0h1m2 0h1m1 0h1m3 0h1m3 0h1m2 0h1m1 0h3m2 0h3m1 0h1m2 0h3m1 0h1m2 0h2m2 0h1m1 0h2m1 0h2m-52 1h1m2 0h1m1 0h2m1 0h1m3 0h3m3 0h1m1 0h1m2 0h2m5 0h1m1 0h3m3 0h1m9 0h1m1 0h1m-52 1h2m1 0h1m1 0h1m1 0h6m2 0h2m1 0h1m1 0h2m2 0h1m3 0h1m2 0h1m1 0h1m3 0h1m1 0h3m1 0h1m1 0h2m1 0h2m-50 1h1m3 0h3m1 0h1m1 0h4m2 0h3m1 0h3m1 0h1m4 0h2m1 0h1m1 0h4m3 0h2m4 0h1m2 0h1m-51 1h5m2 0h1m3 0h1m1 0h3m1 0h2m1 0h1m1 0h2m3 0h4m5 0h2m2 0h1m1 0h2m3 0h3m1 0h2m-51 1h2m1 0h2m1 0h4m3 0h1m6 0h4m5 0h1m3 0h2m1 0h1m1 0h1m7 0h2m1 0h1m-52 1h1m2 0h3m1 0h1m3 0h3m1 0h3m1 0h1m2 0h2m3 0h1m1 0h2m2 0h2m1 0h5m2 0h2m1 0h3m3 0h1m-51 1h1m3 0h2m3 0h4m1 0h1m2 0h1m1 0h4m1 0h2m1 0h1m1 0h1m1 0h5m1 0h1m4 0h1m1 0h5m-51 1h2m1 0h3m1 0h3m1 0h1m3 0h1m1 0h3m1 0h1m2 0h1m2 0h1m1 0h2m1 0h2m2 0h2m2 0h4m1 0h1m1 0h2m2 0h2m-53 1h2m1 0h8m2 0h3m7 0h2m1 0h3m3 0h1m1 0h1m3 0h1m1 0h2m2 0h2m1 0h2m1 0h1m-50 1h2m9 0h3m1 0h1m1 0h3m1 0h1m1 0h2m2 0h1m2 0h1m5 0h1m1 0h1m2 0h8m2 0h1m-50 1h1m2 0h5m1 0h1m3 0h3m1 0h1m1 0h7m3 0h5m1 0h2m1 0h1m2 0h5m1 0h3m-45 1h2m2 0h1m2 0h3m1 0h1m2 0h3m3 0h2m1 0h1m1 0h1m2 0h2m1 0h1m1 0h2m1 0h1m3 0h1m1 0h3m-53 1h7m4 0h1m1 0h1m3 0h1m1 0h1m1 0h2m1 0h1m1 0h1m1 0h6m1 0h5m4 0h1m1 0h1m1 0h2m-50 1h1m5 0h1m3 0h1m2 0h2m2 0h1m2 0h2m2 0h1m3 0h1m1 0h2m1 0h3m1 0h1m1 0h1m1 0h2m1 0h1m3 0h2m1 0h1m-52 1h1m1 0h3m1 0h1m1 0h2m1 0h1m3 0h1m1 0h4m1 0h7m1 0h8m6 0h5m1 0h1m-51 1h1m1 0h3m1 0h1m1 0h1m1 0h2m1 0h2m1 0h3m3 0h1m4 0h1m3 0h7m1 0h4m1 0h1m2 0h1m1 0h1m-50 1h1m1 0h3m1 0h1m1 0h2m3 0h1m1 0h1m1 0h2m1 0h2m5 0h2m1 0h2m1 0h2m2 0h1m1 0h1m1 0h1m1 0h1m3 0h3m-50 1h1m5 0h1m3 0h1m1 0h1m2 0h1m3 0h1m6 0h1m2 0h2m2 0h2m1 0h5m3 0h1m2 0h1m1 0h1m1 0h1m-52 1h7m5 0h6m1 0h1m3 0h3m1 0h1m1 0h3m1 0h1m1 0h1m2 0h1m3 0h3m1 0h1m1 0h1m1 0h1"/></svg><div class="qrfruit"><svg viewBox="-110 -170 290 290" width="40" height="40"><use href="#fruit"/></svg></div></div>
+    <div class="qrtxt"><span class="big">Scan for all<br>18 references</span><span>Full citations with clickable DOI links</span><span class="arrow">←</span></div>
   </div>
 </footer>
 </body>
