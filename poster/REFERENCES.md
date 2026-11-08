@@ -1,6 +1,6 @@
 # Before the Statin — References
 
-**Detecting genetic and early cardiometabolic risk at 15–18, and testing *Citrus bergamot* as a first step**
+**Detecting genetic and early cardiometabolic risk in young patients, and testing *Citrus bergamot* as a first step**
 Noor Al Ahmad · College of Pharmacy, Al Ain University
 
 ---
@@ -40,4 +40,4 @@ Noor Al Ahmad · College of Pharmacy, Al Ain University
 
 ---
 
-*Note: no randomized trial of bergamot in people under 18 had been published at the time of writing; the poster proposes one. Bergamot is a dietary supplement, not an approved therapy. Adolescents with monogenic familial hypercholesterolemia or very high LDL-C should follow guideline statin care.*
+*Note: no randomized trial of bergamot in young patients (children or adolescents) had been published at the time of writing; the poster proposes one. Bergamot is a dietary supplement, not an approved therapy. Young patients with monogenic familial hypercholesterolemia or very high LDL-C should follow guideline statin care.*
