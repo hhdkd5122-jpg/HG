@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Locked Out Poster</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700;9..144,800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0f1b36; --navy2:#16284d; --teal:#0e7471; --teal2:#14a3a0; --mint:#dff1ee; --mint2:#bfe5df;
+  --coral:#e2624b; --coral-soft:#fbe3dd; --amber:#f2b33d; --amber-soft:#fdf0d2;
+  --cream:#f7f4ee; --ink:#14203a; --muted:#56637a; --line:#dcd6cb; --white:#fff;
+}
+@page{size:2384px 3370px;margin:0}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--cream)}
+body{width:2384px;height:3370px;overflow:hidden;font-family:Inter,system-ui,sans-serif;color:var(--ink);font-size:25px;line-height:1.42;-webkit-print-color-adjust:exact;print-color-adjust:exact;position:relative}
+.serif{font-family:Fraunces,Georgia,serif}
+b,strong{font-weight:700}
+
+/* ---------- HEADER ---------- */
+header{position:relative;height:700px;background:var(--navy);color:#fff;overflow:hidden;padding:70px 90px 0}
+header .glow{position:absolute;inset:0;background:
+  radial-gradient(900px 600px at 88% 30%,rgba(20,163,160,.35),transparent 70%),
+  radial-gradient(700px 500px at 0% 110%,rgba(226,98,75,.18),transparent 70%)}
+header .grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:56px 56px}
+.kicker{font-weight:700;letter-spacing:.32em;font-size:22px;color:var(--teal2);text-transform:uppercase}
+header h1{font-family:Fraunces,serif;font-weight:800;font-size:180px;line-height:.95;letter-spacing:-.02em;margin:22px 0 14px}
+header h1 em{font-style:italic;font-weight:600;color:var(--amber)}
+header h2{font-family:Fraunces,serif;font-weight:400;font-size:62px;line-height:1.12;max-width:1250px;color:#e9eef7}
+header .tag{margin-top:22px;font-size:30px;color:#aebbd3;max-width:1180px;line-height:1.4}
+header .tag b{color:#fff}
+.byline{position:relative;margin-top:30px;display:flex;gap:44px;align-items:center;font-size:26px;color:#c7d1e3}
+.byline .name{color:#fff;font-weight:700;font-size:30px}
+.byline .dot{width:8px;height:8px;border-radius:50%;background:var(--teal2)}
+.hero{position:absolute;right:60px;top:10px;width:820px;height:598px}
+
+/* ---------- STATS STRIP ---------- */
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin:-60px 90px 0;position:relative;z-index:2;background:#fff;border-radius:28px;box-shadow:0 30px 60px -30px rgba(15,27,54,.35),0 2px 0 rgba(15,27,54,.04)}
+.stat{padding:30px 36px;border-right:2px solid #eee9df;display:flex;gap:28px;align-items:center}
+.stat:last-child{border-right:0}
+.stat .num{font-family:Fraunces,serif;font-weight:700;font-size:70px;line-height:1;color:var(--teal);white-space:nowrap}
+.stat .num small{font-size:.5em;font-weight:600}
+.stat.c .num{color:var(--coral)}
+.stat .lab{font-size:21px;color:var(--muted);line-height:1.3}
+.stat .lab b{color:var(--ink);display:block;font-size:24px}
+
+/* ---------- BODY GRID ---------- */
+main{zoom:.8;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));align-items:start;gap:54px;padding:50px 112.5px 0}
+.col{display:flex;flex-direction:column;gap:40px}
+.act{display:flex;align-items:baseline;gap:22px;padding-bottom:16px;border-bottom:4px solid var(--navy)}
+.act .roman{font-family:Fraunces,serif;font-weight:800;font-size:92px;line-height:.8;color:var(--teal)}
+.act .t{font-family:Fraunces,serif;font-weight:700;font-size:54px;line-height:1}
+.act .q{font-size:23px;color:var(--muted);margin-left:auto;text-align:right;max-width:330px;line-height:1.25;font-style:italic}
+.card{background:#fff;border-radius:24px;padding:36px 38px;box-shadow:0 1px 0 rgba(15,27,54,.05),0 18px 40px -28px rgba(15,27,54,.28)}
+.card h3{font-family:Fraunces,serif;font-weight:700;font-size:38px;line-height:1.1;margin-bottom:16px;letter-spacing:-.005em}
+.card h3 .n{display:inline-block;font-family:Inter;font-size:19px;font-weight:800;letter-spacing:.14em;color:var(--teal);vertical-align:middle;margin-right:12px;transform:translateY(-4px)}
+.card p{color:#2e3a52}
+.lead{font-size:26px}
+.note{font-size:20px;color:var(--muted);margin-top:16px;line-height:1.35}
+.cite{font-size:17px;color:#8a93a3;margin-top:14px}
+.pill{display:inline-block;font-size:18px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:6px 14px;border-radius:99px;background:var(--mint);color:var(--teal)}
+.pill.c{background:var(--coral-soft);color:#b8412d}
+.pill.a{background:var(--amber-soft);color:#9a6a0b}
+
+/* definitions */
+.deflist{display:grid;gap:14px;margin-top:6px}
+.deflist div{display:grid;grid-template-columns:150px 1fr;gap:18px;align-items:start;padding:14px 0;border-top:2px solid #f0ece4;font-size:23px}
+.deflist div:first-child{border-top:0;padding-top:0}
+.deflist dt,.deflist .k{font-weight:800;color:var(--teal);font-size:19px;letter-spacing:.1em;text-transform:uppercase;padding-top:4px}
+
+/* gene bar */
+.genebar{display:flex;height:64px;border-radius:14px;overflow:hidden;margin:18px 0 22px}
+.genebar span{display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:21px;letter-spacing:.04em}
+.genes{display:grid;grid-template-columns:1fr 1fr;gap:16px 26px}
+.gene{display:grid;grid-template-columns:18px 1fr;gap:14px;font-size:21px;line-height:1.3}
+.gene i{width:18px;height:18px;border-radius:5px;margin-top:5px}
+.gene b{font-size:22px}
+.gene .pct{color:var(--muted);font-weight:600}
+
+/* allele table */
+.alleles{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:8px}
+.al{border-radius:18px;padding:22px 18px;background:var(--cream)}
+.al .h{font-size:17px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.al .d{font-family:Fraunces,serif;font-weight:700;font-size:30px;margin:4px 0 12px;line-height:1.05}
+.al .ldl{font-family:Fraunces,serif;font-size:40px;font-weight:700;line-height:1}
+.al .ldl small{font-family:Inter;font-size:16px;font-weight:600;color:var(--muted);display:block;margin-top:6px;letter-spacing:.02em}
+.al ul{list-style:none;margin-top:14px;font-size:19px;line-height:1.35;color:#3a465c}
+.al li{padding-left:18px;position:relative;margin-top:4px}
+.al li:before{content:"";position:absolute;left:0;top:10px;width:8px;height:8px;border-radius:50%;background:currentColor;opacity:.4}
+.al.a1{background:var(--mint)} .al.a1 .ldl{color:var(--teal)}
+.al.a2{background:var(--amber-soft)} .al.a2 .ldl{color:#b07a0e}
+.al.a3{background:var(--coral-soft)} .al.a3 .ldl{color:#c2452f}
+.gates{display:flex;gap:4px;margin:4px 0 2px}
+.gates i{width:15px;height:22px;border-radius:8px 8px 3px 3px;border:3px solid var(--teal);background:var(--teal)}
+.gates i.off{background:transparent;border-color:#c9c2b5}
+.a3 .gates i{border-color:#c2452f;background:#c2452f}.a3 .gates i.off{background:transparent;border-color:#d9b9b1}
+.a2 .gates i{border-color:#b07a0e;background:#b07a0e}.a2 .gates i.off{background:transparent;border-color:#e2cf9f}
+
+/* mechanism steps */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:10px;position:relative}
+.step{text-align:center;padding:0 8px;position:relative}
+.step .ic{width:104px;height:104px;margin:0 auto 14px;border-radius:50%;display:grid;place-items:center;background:var(--mint);position:relative;z-index:1}
+.step:nth-child(2) .ic{background:var(--amber-soft)}
+.step:nth-child(3) .ic{background:var(--coral-soft)}
+.step:nth-child(4) .ic{background:#e3e8f6}
+.step .s{font-size:17px;font-weight:800;letter-spacing:.14em;color:var(--teal);text-transform:uppercase}
+.step .h{font-family:Fraunces,serif;font-weight:700;font-size:30px;line-height:1.05;margin:2px 0 8px}
+.step p{font-size:19px;line-height:1.3;color:#3a465c}
+.steps:before{content:"";position:absolute;top:52px;left:12%;right:12%;border-top:4px dashed var(--mint2)}
+
+/* pgx table */
+.pgx{width:100%;border-collapse:collapse;font-size:21px;margin-top:6px}
+.pgx th{font-size:16px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);text-align:left;padding:0 10px 12px;font-weight:800}
+.pgx td{padding:16px 10px;border-top:2px solid #f0ece4;vertical-align:top;line-height:1.3}
+.pgx td:first-child{font-family:Fraunces,serif;font-weight:700;font-size:28px;color:var(--navy);white-space:nowrap;font-style:italic}
+.pgx td small{display:block;color:var(--muted);font-size:18px}
+
+/* SLCO1B1 */
+.big2{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:18px 0 20px}
+.bign{border-radius:20px;padding:26px 26px 22px;background:var(--coral-soft)}
+.bign .v{font-family:Fraunces,serif;font-weight:800;font-size:104px;line-height:.9;color:#c2452f;letter-spacing:-.02em}
+.bign .v small{font-size:.55em}
+.bign .l{font-size:20px;line-height:1.3;color:#5b3a33;margin-top:10px}
+.callout{background:var(--navy);color:#e7ecf5;border-radius:20px;padding:24px 28px;font-size:22px;line-height:1.4}
+.callout b{color:var(--amber)}
+
+/* bar chart */
+.route{margin-top:6px}
+.route .rh{display:flex;justify-content:space-between;align-items:baseline;margin:6px 0 10px}
+.route .rh b{font-family:Fraunces,serif;font-size:28px}
+.bar{display:grid;grid-template-columns:270px 1fr 116px;gap:16px;align-items:center;padding:6px 0}
+.bar .nm{font-weight:700;font-size:21px;line-height:1.15}
+.bar .nm small{display:block;font-weight:500;color:var(--muted);font-size:17px}
+.bar .tr{height:22px;border-radius:11px;background:#f0ece4;position:relative}
+.bar .tr span{position:absolute;top:0;bottom:0;border-radius:11px}
+.bar .tr span.core{background:var(--teal)}
+.bar .tr span.rng{background:var(--teal);opacity:.35}
+.r2 .bar .tr span.core{background:var(--coral)} .r2 .bar .tr span.rng{background:var(--coral);opacity:.35}
+.bar .vl{font-family:Fraunces,serif;font-weight:700;font-size:26px;text-align:right;white-space:nowrap}
+.axis{display:grid;grid-template-columns:270px 1fr 116px;gap:16px;font-size:16px;color:#8a93a3;margin-top:4px}
+.axis div:nth-child(2){display:flex;justify-content:space-between}
+.r2{margin-top:22px;padding-top:20px;border-top:2px dashed #e6e0d5}
+
+/* PCSK9 */
+.pcsk{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:6px}
+.pcsk div{border-radius:18px;padding:20px;font-size:19px;line-height:1.3;background:var(--cream)}
+.pcsk b{display:block;font-family:Fraunces,serif;font-size:24px;margin-bottom:6px}
+.pcsk .k{font-family:Fraunces,serif;font-weight:800;font-size:46px;color:var(--teal);line-height:1;display:block;margin:6px 0}
+
+/* clues */
+.clues{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:6px;position:relative}
+.clue{border:2px solid #ece6db;border-radius:18px;padding:20px 22px;font-size:19px;line-height:1.3;color:#3a465c}
+.clue b{display:block;font-size:23px;color:var(--ink);margin-bottom:4px}
+.clue .no{font-family:Fraunces,serif;font-weight:800;font-size:34px;color:var(--teal);float:right;line-height:1;opacity:.5}
+.rx{margin-top:16px;display:flex;align-items:center;gap:22px;background:linear-gradient(90deg,var(--teal),#0b5e5c);color:#fff;border-radius:18px;padding:22px 26px;font-size:22px;line-height:1.35}
+.rx .sym{font-family:Fraunces,serif;font-weight:800;font-size:64px;line-height:.8;font-style:italic}
+
+/* ladder */
+.ladder{display:grid;grid-template-columns:1fr 290px;gap:22px;margin-top:4px}
+.rung{display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:center;font-size:20px;line-height:1.25;padding:8px 0}
+.rung .k{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:var(--mint);color:var(--teal);font-weight:800;font-size:20px}
+.rung.inv .k{background:var(--amber);color:#fff}
+.rung.inv{font-weight:700}
+.say{display:flex;flex-direction:column;gap:12px}
+.say div{border-radius:16px;padding:16px 18px;font-size:18px;line-height:1.3}
+.say .no{background:var(--coral-soft);color:#7a3326}
+.say .yes{background:var(--mint);color:#0b4f4d}
+.say .warn{background:var(--navy);color:#dfe6f2}
+.say .lbl{display:block;font-weight:800;letter-spacing:.12em;text-transform:uppercase;font-size:14px;margin-bottom:4px;opacity:.85}
+
+/* ---------- RQ + FOOTER ---------- */
+.rq{margin:70px 90px 0;background:var(--teal);border-radius:32px;color:#fff;display:grid;grid-template-columns:auto 1fr auto;gap:50px;align-items:center;padding:40px 56px;position:relative;overflow:hidden}
+.rq:after{content:"";position:absolute;right:-120px;top:-160px;width:520px;height:520px;border-radius:50%;border:70px solid rgba(255,255,255,.06)}
+.rq .q{font-family:Fraunces,serif;font-weight:800;font-size:180px;line-height:.7;color:var(--amber);font-style:italic}
+.rq .lbl{font-size:20px;font-weight:800;letter-spacing:.28em;text-transform:uppercase;color:#bfeeea}
+.rq h4{font-family:Fraunces,serif;font-weight:600;font-size:42px;line-height:1.15;margin:10px 0 12px;max-width:1500px}
+.rq p{font-size:22px;color:#d4f1ee;max-width:1500px}
+.rq .take{position:relative;z-index:1;background:rgba(255,255,255,.1);border:2px solid rgba(255,255,255,.18);border-radius:22px;padding:24px 28px;width:420px;font-size:20px;line-height:1.35}
+.rq .take .th{display:block;font-weight:800;font-size:15px;letter-spacing:.2em;text-transform:uppercase;color:var(--amber);margin-bottom:10px}
+.rq .take ol{padding-left:24px}.rq .take li{margin-top:6px}
+
+footer{position:absolute;left:0;right:0;bottom:0;height:350px;background:var(--navy);color:#b3bed3;padding:44px 90px;display:grid;grid-template-columns:1fr 420px;gap:70px}
+footer h5{font-size:17px;letter-spacing:.28em;text-transform:uppercase;color:var(--teal2);margin-bottom:14px}
+footer ol{columns:2;column-gap:56px;font-size:16px;line-height:1.38;padding-left:24px}
+footer li{break-inside:avoid;margin-bottom:5px}
+footer li i{color:#e6ebf4}
+.ftr-r{border-left:2px solid rgba(255,255,255,.12);padding-left:50px;font-size:20px;line-height:1.45}
+.ftr-r .nm{font-family:Fraunces,serif;color:#fff;font-size:38px;font-weight:700;line-height:1.1;margin-bottom:6px}
+.ftr-r .gl{display:flex;gap:10px;margin-top:24px}
+.ftr-r .gl i{width:26px;height:36px;border-radius:13px 13px 4px 4px;background:var(--teal2)}
+.ftr-r .gl i.off{background:transparent;border:3px solid #3c4f74}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="glow"></div><div class="grid"></div>
+
+  <!-- HERO: hepatocyte surface with LDL receptors ("gates") -->
+  <svg class="hero" viewBox="0 0 960 700" aria-hidden="true">
+    <defs>
+      <radialGradient id="ldl" cx="35%" cy="30%" r="75%"><stop offset="0" stop-color="#ffd27a"/><stop offset="1" stop-color="#e09a1c"/></radialGradient>
+      <radialGradient id="ldlx" cx="35%" cy="30%" r="75%"><stop offset="0" stop-color="#ff9d88"/><stop offset="1" stop-color="#c8432c"/></radialGradient>
+      <linearGradient id="cell" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#14a3a0" stop-opacity=".55"/><stop offset="1" stop-color="#0e7471" stop-opacity=".0"/></linearGradient>
+      <filter id="soft"><feGaussianBlur stdDeviation="14"/></filter>
+    </defs>
+    <!-- blood label -->
+    <text x="110" y="78" fill="#7f90b3" font-family="Inter" font-size="20" font-weight="700" letter-spacing="5">BLOOD · LDL PARTICLES</text>
+    <!-- membrane -->
+    <path d="M60 470 C 260 420, 520 420, 920 470 L 920 700 L 60 700 Z" fill="url(#cell)"/>
+    <path d="M60 470 C 260 420, 520 420, 920 470" stroke="#14a3a0" stroke-width="10" fill="none" stroke-linecap="round"/>
+    <path d="M60 492 C 260 442, 520 442, 920 492" stroke="#14a3a0" stroke-width="4" fill="none" stroke-opacity=".5" stroke-linecap="round"/>
+    <text x="905" y="545" text-anchor="end" fill="#9fe0dc" font-family="Inter" font-size="20" font-weight="700" letter-spacing="5">HEPATOCYTE</text>
+
+    <!-- receptors: 5 working (teal), 5 missing (dashed outline) -->
+    <g font-family="Inter">
+      <!-- positions along curve approximated -->
+      <g transform="translate(150,438)"><path d="M-22 18 V-38 a22 22 0 0 1 44 0 V18" fill="#14a3a0" stroke="#bff1ed" stroke-width="3"/><circle cy="-38" r="9" fill="#0f1b36"/></g>
+      <g transform="translate(232,426)"><path d="M-22 18 V-38 a22 22 0 0 1 44 0 V18" fill="#14a3a0" stroke="#bff1ed" stroke-width="3"/><circle cy="-38" r="9" fill="#0f1b36"/></g>
+      <g transform="translate(314,418)"><path d="M-22 18 V-38 a22 22 0 0 1 44 0 V18" fill="#14a3a0" stroke="#bff1ed" stroke-width="3"/><circle cy="-38" r="9" fill="#0f1b36"/></g>
+      <g transform="translate(396,414)"><path d="M-22 18 V-38 a22 22 0 0 1 44 0 V18" fill="#14a3a0" stroke="#bff1ed" stroke-width="3"/><circle cy="-38" r="9" fill="#0f1b36"/></g>
+      <g transform="translate(478,413)"><path d="M-22 18 V-38 a22 22 0 0 1 44 0 V18" fill="#14a3a0" stroke="#bff1ed" stroke-width="3"/><circle cy="-38" r="9" fill="#0f1b36"/></g>
+      <g transform="translate(560,416)" opacity=".75"><path d="M-22 18 V-38 a22 22 0 0 1 44 0 V18" fill="none" stroke="#5a6f99" stroke-width="3" stroke-dasharray="8 7"/></g>
+      <g transform="translate(642,422)" opacity=".75"><path d="M-22 18 V-38 a22 22 0 0 1 44 0 V18" fill="none" stroke="#5a6f99" stroke-width="3" stroke-dasharray="8 7"/></g>
+      <g transform="translate(724,431)" opacity=".75"><path d="M-22 18 V-38 a22 22 0 0 1 44 0 V18" fill="none" stroke="#5a6f99" stroke-width="3" stroke-dasharray="8 7"/></g>
+      <g transform="translate(806,442)" opacity=".75"><path d="M-22 18 V-38 a22 22 0 0 1 44 0 V18" fill="none" stroke="#5a6f99" stroke-width="3" stroke-dasharray="8 7"/></g>
+      <g transform="translate(880,455)" opacity=".75"><path d="M-22 18 V-38 a22 22 0 0 1 44 0 V18" fill="none" stroke="#5a6f99" stroke-width="3" stroke-dasharray="8 7"/></g>
+    </g>
+
+    <!-- LDL being taken up at working gates -->
+    <g>
+      <circle cx="232" cy="342" r="30" fill="url(#ldl)"/><circle cx="232" cy="342" r="30" fill="none" stroke="#fff" stroke-opacity=".5" stroke-width="2"/>
+      <path d="M232 372 v12" stroke="#ffd27a" stroke-width="4"/>
+      <circle cx="396" cy="330" r="30" fill="url(#ldl)"/>
+      <path d="M396 360 v10" stroke="#ffd27a" stroke-width="4"/>
+      <circle cx="232" cy="520" r="18" fill="#ffd27a" opacity=".6"/>
+      <circle cx="396" cy="512" r="18" fill="#ffd27a" opacity=".6"/>
+      <circle cx="310" cy="560" r="14" fill="#ffd27a" opacity=".35"/>
+    </g>
+
+    <!-- LDL piling up above missing gates -->
+    <g>
+      <circle cx="600" cy="300" r="34" fill="url(#ldlx)"/>
+      <circle cx="680" cy="250" r="30" fill="url(#ldlx)"/>
+      <circle cx="760" cy="320" r="34" fill="url(#ldlx)"/>
+      <circle cx="840" cy="230" r="28" fill="url(#ldlx)"/>
+      <circle cx="560" cy="200" r="26" fill="url(#ldlx)" opacity=".85"/>
+      <circle cx="720" cy="160" r="24" fill="url(#ldlx)" opacity=".7"/>
+      <circle cx="870" cy="340" r="26" fill="url(#ldlx)" opacity=".85"/>
+      <circle cx="640" cy="120" r="20" fill="url(#ldlx)" opacity=".55"/>
+      <circle cx="820" cy="110" r="18" fill="url(#ldlx)" opacity=".45"/>
+      <circle cx="300" cy="200" r="24" fill="url(#ldl)" opacity=".6"/>
+      <circle cx="440" cy="150" r="20" fill="url(#ldl)" opacity=".45"/>
+    </g>
+    <!-- annotation -->
+    <g font-family="Inter" font-weight="700">
+      <path d="M478 470 v60" stroke="#ffffff" stroke-opacity=".35" stroke-width="2"/>
+      <text x="300" y="610" fill="#e7ecf5" font-size="22" text-anchor="middle">5 working gates · LDL cleared</text>
+      <text x="720" y="610" fill="#ff9d88" font-size="22" text-anchor="middle">5 missing gates · LDL builds up</text>
+      <path d="M150 582 H450" stroke="#14a3a0" stroke-width="4" stroke-linecap="round"/>
+      <path d="M560 582 H880" stroke="#e2624b" stroke-width="4" stroke-linecap="round" stroke-dasharray="10 8"/>
+    </g>
+  </svg>
+
+  <div style="position:relative">
+    <div class="kicker">Pharmacogenomics · Clinical Pharmacy</div>
+    <h1>Locked <em>Out</em></h1>
+    <h2>Genetics and statin response in familial hypercholesterolemia</h2>
+    <p class="tag">Half the gates are missing. <b>How a gene keeps LDL out of the liver</b>, and how DNA shapes the drugs that let it back in.</p>
+  </div>
+  <div class="byline"><span class="name">Noor Al Ahmad</span><span class="dot"></span><span>Clinical Pharmacy</span><span class="dot"></span><span>Narrative review &amp; proposed research question</span></div>
+</header>
+
+<section class="stats">
+  <div class="stat"><div class="num">1<small> in </small>311</div><div class="lab"><b>Heterozygous FH</b>people worldwide carry one faulty allele</div></div>
+  <div class="stat"><div class="num">1<small> in </small>300k</div><div class="lab"><b>Homozygous FH</b>two faulty alleles, almost no receptors</div></div>
+  <div class="stat c"><div class="num">≈3×</div><div class="lab"><b>Cardiovascular risk</b>in variant carriers versus non-carriers</div></div>
+  <div class="stat c"><div class="num">&gt;190</div><div class="lab"><b>mg/dL LDL-C</b>(5 mmol/L) in adults; high from childhood</div></div>
+</section>
+
+<main>
+  <!-- ================= ACT I ================= -->
+  <div class="col">
+    <div class="act"><span class="roman">I</span><span class="t">The Gene</span><span class="q">Why can't the liver let LDL in?</span></div>
+
+    <div class="card">
+      <h3>A 10-year-old with adult-level cholesterol</h3>
+      <p class="lead">No symptoms. No warning. Only a variant inherited from one parent, and decades of silent exposure ahead. Risk tracks <b>LDL-C × years</b>: high LDL-C from birth means disease decades earlier.</p>
+      <div class="deflist" style="margin-top:22px">
+        <div><span class="k">Inherited</span><span>The liver cannot clear LDL from the blood</span></div>
+        <div><span class="k">Lifelong</span><span>LDL-C very high from childhood, &gt;190 mg/dL in adults</span></div>
+        <div><span class="k">Dangerous</span><span>Premature atherosclerotic cardiovascular disease</span></div>
+        <div><span class="k">Diagnosis</span><span>LDL-C, family history, physical signs and a genetic test</span></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3><span class="n">FIG 1</span>Four genes, one broken gate</h3>
+      <div class="genebar">
+        <span style="width:87.5%;background:var(--teal)">LDLR · 85–90%</span>
+        <span style="width:7.5%;background:var(--amber)"></span>
+        <span style="width:3.5%;background:var(--coral)"></span>
+        <span style="width:1.5%;background:var(--navy)"></span>
+      </div>
+      <div class="genes">
+        <div class="gene"><i style="background:var(--teal)"></i><div><b>LDLR</b> <span class="pct">85–90%</span><br>The receptor itself is missing or defective</div></div>
+        <div class="gene"><i style="background:var(--amber)"></i><div><b>APOB</b> <span class="pct">5–10%</span><br>ApoB-100, the key on LDL, no longer fits</div></div>
+        <div class="gene"><i style="background:var(--coral)"></i><div><b>PCSK9</b> <span class="pct">1–3%</span><br>Gain of function: receptors destroyed too fast</div></div>
+        <div class="gene"><i style="background:var(--navy)"></i><div><b>LDLRAP1</b> <span class="pct">&lt;1%</span><br>Receptor not internalised (recessive)</div></div>
+      </div>
+      <p class="note">Same end point: <b>fewer working LDL receptors → less clearance → higher LDL-C.</b></p>
+    </div>
+
+    <div class="card">
+      <h3><span class="n">FIG 2</span>Count the gates: one faulty allele or two</h3>
+      <div class="alleles">
+        <div class="al a1"><div class="h">0 faulty alleles</div><div class="d">No FH</div>
+          <div class="gates"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <ul><li>Full receptor activity</li><li>Normal LDL clearance</li><li>Statins work well</li></ul></div>
+        <div class="al a2"><div class="h">1 faulty allele</div><div class="d">Heterozygous</div>
+          <div class="gates"><i></i><i></i><i></i><i></i><i></i><i class="off"></i><i class="off"></i><i class="off"></i><i class="off"></i><i class="off"></i></div>
+          <div class="ldl" style="margin-top:14px">&gt;190<small>mg/dL LDL-C</small></div>
+          <ul><li>About half the activity</li><li>Statins usually work</li></ul></div>
+        <div class="al a3"><div class="h">2 faulty alleles</div><div class="d">Homozygous</div>
+          <div class="gates"><i></i><i class="off"></i><i class="off"></i><i class="off"></i><i class="off"></i><i class="off"></i><i class="off"></i><i class="off"></i><i class="off"></i><i class="off"></i></div>
+          <div class="ldl" style="margin-top:14px">&gt;400<small>mg/dL LDL-C</small></div>
+          <ul><li>Little or no activity</li><li>Statins work poorly</li></ul></div>
+      </div>
+      <p class="cite">Gate icons are schematic. Hu et al. 2020; Cuchel et al. 2023; Mach et al. 2020.</p>
+    </div>
+    <div class="card">
+      <h3>PCSK9: the demolition crew, switched off</h3>
+      <div class="pcsk">
+        <div><b>Too much</b>Gain-of-function variants destroy receptors and <b>cause FH</b><span class="cite" style="display:block">Abifadel 2003</span></div>
+        <div><b>Too little</b>Loss-of-function carriers<span class="k">−88%</span>coronary disease, 28% lower LDL-C<span class="cite" style="display:block">Cohen 2006</span></div>
+        <div><b>Block it</b>Antibodies and siRNA<span class="k">−50–60%</span>LDL-C; blunted in receptor-null homozygotes</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= ACT II ================= -->
+  <div class="col">
+    <div class="act"><span class="roman">II</span><span class="t">The Drug</span><span class="q">Why does the same dose work differently?</span></div>
+
+    <div class="card">
+      <h3><span class="n">FIG 3</span>Statins make the liver build more gates</h3>
+      <div class="steps">
+        <div class="step"><div class="ic"><svg width="58" height="58" viewBox="0 0 58 58"><g transform="rotate(-40 29 29)"><rect x="6" y="18" width="46" height="22" rx="11" fill="#fff" stroke="#0e7471" stroke-width="4"/><path d="M29 18v22" stroke="#0e7471" stroke-width="4"/><rect x="8" y="20" width="21" height="18" rx="9" fill="#14a3a0"/></g></svg></div>
+          <div class="s">1 · Block</div><div class="h">HMG-CoA reductase</div><p>The statin inhibits cholesterol synthesis</p></div>
+        <div class="step"><div class="ic"><svg width="58" height="58" viewBox="0 0 58 58"><path d="M10 40 V22 M20 40 V30 M30 40 V14 M40 40 V26" stroke="#b07a0e" stroke-width="6" stroke-linecap="round"/><path d="M8 12 L48 44" stroke="#c2452f" stroke-width="0"/><path d="M46 12 l0 22 m-7 -7 l7 7 l7 -7" stroke="#b07a0e" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div class="s">2 · Sense</div><div class="h">SREBP-2 on</div><p>Liver cholesterol falls; the sensor switches on</p></div>
+        <div class="step"><div class="ic"><svg width="60" height="58" viewBox="0 0 60 58"><g fill="#c2452f"><path d="M6 46 V24 a7 7 0 0 1 14 0 V46z"/><path d="M23 46 V18 a7 7 0 0 1 14 0 V46z"/><path d="M40 46 V24 a7 7 0 0 1 14 0 V46z"/></g><path d="M2 48 H58" stroke="#0f1b36" stroke-width="4" stroke-linecap="round"/></svg></div>
+          <div class="s">3 · Build</div><div class="h">More receptors</div><p>More LDL receptors reach the cell surface</p></div>
+        <div class="step"><div class="ic"><svg width="58" height="58" viewBox="0 0 58 58"><path d="M29 8 V44 m-12 -12 l12 12 l12 -12" stroke="#16284d" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="14" cy="14" r="6" fill="#f2b33d"/><circle cx="44" cy="12" r="5" fill="#f2b33d"/></svg></div>
+          <div class="s">4 · Clear</div><div class="h">LDL-C falls</div><p>By 30–50% or more as LDL leaves the blood</p></div>
+      </div>
+      <div class="callout" style="margin-top:24px">No working receptor allele → little statin effect. <b>Statin efficacy depends on the FH genotype.</b></div>
+    </div>
+
+    <div class="card">
+      <h3><span class="n">FIG 4</span>Same dose, different patients</h3>
+      <p>Drug-handling genes (<b>SLCO1B1, ABCG2, CYP2C9</b>) set how much statin reaches blood and muscle; drug-target genes (<b>LDLR, APOB, PCSK9</b>) set how far LDL-C can fall. Adherence, interacting drugs, thyroid or kidney disease and diet add to both. <b>Handling genes</b> mainly drive <span style="color:#c2452f;font-weight:700">toxicity</span>; <b>target genes</b> mainly drive <span style="color:var(--teal);font-weight:700">efficacy</span>.</p>
+      <table class="pgx" style="margin-top:22px">
+        <tr><th>Gene</th><th>Role</th><th>Statin most affected</th><th>Effect</th></tr>
+        <tr><td>SLCO1B1</td><td>Liver uptake door<small>OATP1B1</small></td><td>Simvastatin</td><td>Higher myopathy risk</td></tr>
+        <tr><td>ABCG2</td><td>Efflux pump<small>BCRP</small></td><td>Rosuvastatin</td><td>Higher drug exposure</td></tr>
+        <tr><td>CYP2C9</td><td>Metabolising enzyme</td><td>Fluvastatin</td><td>Slower clearance</td></tr>
+      </table>
+      <p class="cite">CPIC 2022 turns each genotype into a statin- and dose-specific recommendation (Cooper-DeHoff et al.).</p>
+    </div>
+
+    <div class="card">
+      <h3>When the statin itself is locked out</h3>
+      <p><span class="pill c" style="text-transform:none;letter-spacing:.02em">SLCO1B1 c.521T&gt;C</span>&nbsp; Less statin enters the liver, so more reaches muscle.</p>
+      <div class="big2">
+        <div class="bign"><div class="v">4.5<small>×</small></div><div class="l">odds of myopathy <b>per C allele</b></div></div>
+        <div class="bign"><div class="v">16.9<small>×</small></div><div class="l">odds in <b>CC vs TT</b> homozygotes</div></div>
+      </div>
+      <div class="callout"><b>CPIC 2022:</b> choose another statin, or keep simvastatin below 20 mg/day. A risk genotype is <b>not</b> a reason to stop statins.</div>
+      <p class="cite">SEARCH Collaborative Group, NEJM 2008 (simvastatin 80 mg).</p>
+    </div>
+  </div>
+
+  <!-- ================= ACT III ================= -->
+  <div class="col">
+    <div class="act"><span class="roman">III</span><span class="t">The Patient</span><span class="q">How does a genotype become a prescription?</span></div>
+
+    <div class="card">
+      <h3><span class="n">FIG 5</span>Two ways out for LDL</h3>
+      <div class="route">
+        <div class="rh"><b>Route 1 · Open more gates</b><span class="pill">Needs a working receptor</span></div>
+        <div class="bar"><div class="nm">Evolocumab, alirocumab<small>anti-PCSK9 antibodies</small></div><div class="tr"><span class="rng" style="left:0;width:100%"></span><span class="core" style="left:0;width:83.3%"></span></div><div class="vl">50–60%</div></div>
+        <div class="bar"><div class="nm">Inclisiran<small>siRNA vs hepatic PCSK9</small></div><div class="tr"><span class="core" style="left:0;width:83.3%"></span></div><div class="vl">≈50%</div></div>
+        <div class="bar"><div class="nm">Bempedoic acid<small>ATP-citrate lyase inhibitor</small></div><div class="tr"><span class="rng" style="left:0;width:41.7%"></span><span class="core" style="left:0;width:25%"></span></div><div class="vl">15–25%</div></div>
+        <div class="bar"><div class="nm">Ezetimibe<small>NPC1L1 inhibitor</small></div><div class="tr"><span class="core" style="left:0;width:33.3%"></span></div><div class="vl">≈20%</div></div>
+      </div>
+      <div class="route r2">
+        <div class="rh"><b>Route 2 · Take another exit</b><span class="pill c">Receptor-independent</span></div>
+        <div class="bar"><div class="nm">Evinacumab<small>ANGPTL3 antibody</small></div><div class="tr"><span class="core" style="left:0;width:83.3%"></span></div><div class="vl">≈50%</div></div>
+        <div class="bar"><div class="nm">Lomitapide<small>MTP inhibitor</small></div><div class="tr"><span class="rng" style="left:0;width:83.3%"></span><span class="core" style="left:0;width:66.7%"></span></div><div class="vl">40–50%</div></div>
+        <div class="bar"><div class="nm">Lipoprotein apheresis<small>physical removal of LDL</small></div><div class="tr" style="background:repeating-linear-gradient(90deg,#f0ece4 0 14px,#f8d8d0 14px 22px)"></div><div class="vl" style="font-size:18px;color:var(--muted)">procedure</div></div>
+      </div>
+      <div class="axis"><div></div><div><span>0</span><span>20</span><span>40</span><span>60%</span></div><div></div></div>
+      <p class="note">Approximate added LDL-C reduction in pivotal trials; route 2 values are from homozygous FH. Light segment = upper end of range. <b>When almost no gates remain, opening more of them cannot work.</b></p>
+    </div>
+
+
+    <div class="card">
+      <h3><span class="n">FIG 6</span>Four clues, one prescription</h3>
+      <div class="clues">
+        <div class="clue"><span class="no">1</span><b>Disease genotype</b>Which gene, one allele or two, residual receptor activity</div>
+        <div class="clue"><span class="no">2</span><b>Pharmacogenotype</b>SLCO1B1, ABCG2 and CYP2C9 function</div>
+        <div class="clue"><span class="no">3</span><b>Phenotype</b>LDL-C, Lp(a), age, existing ASCVD</div>
+        <div class="clue"><span class="no">4</span><b>Response</b>LDL-C fall and tolerability at follow-up</div>
+      </div>
+      <div class="rx"><span class="sym">℞</span><span>Together they decide <b>which drug, what dose, which add-on</b> and <b>how to monitor</b>.</span></div>
+    </div>
+
+    <div class="card">
+      <h3>Future directions: diet &amp; bergamot</h3>
+      <div class="ladder">
+        <div>
+          <div class="rung"><span class="k">1</span>Genetic FH diagnosed</div>
+          <div class="rung"><span class="k">2</span>Lifestyle and heart-healthy diet</div>
+          <div class="rung"><span class="k">3</span>Statin therapy when indicated</div>
+          <div class="rung"><span class="k">4</span><span>Poor response or intolerance: individualised non-statin therapy</span></div>
+          <div class="rung inv"><span class="k">5</span><span>Investigational adjunct: <i>Citrus bergamia</i> (bergamot) polyphenols</span></div>
+        </div>
+        <div class="say">
+          <div class="no"><span class="lbl">Do not say</span>“A natural replacement for statins”</div>
+          <div class="yes"><span class="lbl">Say instead</span>“A potential adjunct under investigation for additional LDL-C reduction”</div>
+          <div class="warn">Diet alone generally cannot overcome the genetic defect in FH.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<section class="rq">
+  <div class="q">?</div>
+  <div style="position:relative;z-index:1">
+    <div class="lbl">Proposed research question</div>
+    <h4>Could genetically guided treatment combined with dietary and nutraceutical interventions improve LDL-C control in young patients with familial hypercholesterolemia?</h4>
+    <p>Personalised lipid management in young patients with FH: from pharmacogenomics to dietary and nutraceutical interventions.</p>
+  </div>
+  <div class="take"><span class="th">Take-home</span><ol>
+    <li>FH genotype predicts <b>how well</b> statins can work.</li>
+    <li>SLCO1B1 · ABCG2 · CYP2C9 predict <b>how safely</b>.</li>
+    <li>Few gates left → choose a <b>receptor-independent</b> route.</li>
+  </ol></div>
+</section>
+
+<footer>
+  <div>
+    <h5>References</h5>
+    <ol>
+      <li>Hu P, et al. Prevalence of familial hypercholesterolemia among the general population and patients with ASCVD. <i>Circulation</i> 2020;141:1742–59.</li>
+      <li>Cuchel M, et al. 2023 update on EAS consensus statement on homozygous familial hypercholesterolaemia. <i>Eur Heart J</i> 2023;44:2277–91.</li>
+      <li>Cooper-DeHoff RM, et al. CPIC guideline for SLCO1B1, ABCG2, and CYP2C9 genotypes and statin-associated musculoskeletal symptoms. <i>Clin Pharmacol Ther</i> 2022;111:1007–21.</li>
+      <li>SEARCH Collaborative Group. SLCO1B1 variants and statin-induced myopathy: a genomewide study. <i>N Engl J Med</i> 2008;359:789–99.</li>
+      <li>Abifadel M, et al. Mutations in PCSK9 cause autosomal dominant hypercholesterolemia. <i>Nat Genet</i> 2003;34:154–6.</li>
+      <li>Cohen JC, et al. Sequence variations in PCSK9, low LDL, and protection against coronary heart disease. <i>N Engl J Med</i> 2006;354:1264–72.</li>
+      <li>Mach F, et al. 2019 ESC/EAS guidelines for the management of dyslipidaemias. <i>Eur Heart J</i> 2020;41:111–88; 2025 Focused Update, <i>Eur Heart J</i> 2025;46:4359.</li>
+      <li>Familial hypercholesterolemia (review). <i>Methodist DeBakey Cardiovasc J</i> 2025.</li>
+      <li>Effect of bergamot on lipid profile in humans: a systematic review. <i>Crit Rev Food Sci Nutr</i> 2020.</li>
+      <li>Bergamot supplementation and lipid profiles: systematic review and meta-analysis of RCTs. <i>Phytother Res</i> 2022.</li>
+    </ol>
+  </div>
+  <div class="ftr-r">
+    <div class="nm">Noor Al Ahmad</div>
+    <div>Pharmacogenomics · Clinical Pharmacy</div>
+    <div class="gl"><i></i><i></i><i></i><i></i><i></i><i class="off"></i><i class="off"></i><i class="off"></i><i class="off"></i><i class="off"></i></div>
+    <div style="margin-top:12px;font-size:17px;color:#7f8db0">Half the gates are missing. DNA shows which key fits.</div>
+  </div>
+</footer>
+</body>
+</html>
