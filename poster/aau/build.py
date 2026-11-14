@@ -1,5 +1,6 @@
+import charts
 t=open('template.html').read()
-m1=open('mol1.svgfrag').read()
-qr=open('qr.svg').read().replace('<svg ','<svg width="210" height="210" ',1)
-t=t.replace('{{MOL1}}',m1).replace('{{MOL1W}}',m1.replace('<text','<text fill="#e8f0c8" stroke="none"')).replace('{{QR}}',qr)
+qr=open('qr.svg').read().replace('<svg ','<svg width="170" height="170" ',1)
+for k,v in {'MECH':charts.mechanism(),'LINE':charts.linechart(),'DONUT':charts.donut(),'LDL':charts.ldlbars(),'LIVER':charts.liverbars(),'PROC':charts.process(),'QR':qr}.items():
+    t=t.replace('{{'+k+'}}',v)
 open('poster.html','w').write(t)

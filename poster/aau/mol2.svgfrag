@@ -1,9 +1,0 @@
-<path d="M0 0 L48 -28 L96 0 L144 -28 L192 0 L240 -28"/>
-<text x="-70" y="10">HO</text><path d="M0 0 L-20 0"/>
-<path d="M44 -28 V-80 M52 -28 V-80"/><text x="38" y="-88">O</text>
-<path d="M144 -28 V-78"/><text x="128" y="-86">OH</text>
-<path d="M144 -28 L170 -62" opacity="0"/>
-
-<path d="M144 -28 L176 -48" opacity="0"/>
-<path d="M236 -28 V-80 M244 -28 V-80"/><text x="230" y="-88">O</text>
-<path d="M240 -28 L280 0"/><text x="284" y="8">S-CoA</text>
