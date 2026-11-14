@@ -37,6 +37,7 @@ Noor Al Ahmad · College of Pharmacy, Al Ain University
 
 17. Guardamagna O, et al. The treatment of hypercholesterolemic children: efficacy and safety of a combination of red yeast rice extract and policosanols. *Nutr Metab Cardiovasc Dis* 2011;21:424–9. https://doi.org/10.1016/j.numecd.2009.10.015
 18. Cicero AFG, et al. Nutraceuticals in the management of dyslipidemia: which, when, and for whom? *Curr Atheroscler Rep* 2021. https://doi.org/10.1007/s11883-021-00955-y
+19. Parafati M, et al. Bergamot polyphenol fraction prevents nonalcoholic fatty liver disease via stimulation of lipophagy in cafeteria diet-induced rat model of metabolic syndrome. *J Nutr Biochem* 2015. https://doi.org/10.1016/j.jnutbio.2015.03.008
 
 ---
 
