@@ -10,7 +10,7 @@ An awareness talk. About 270 words, roughly 2 minutes. *Italic lines in brackets
 
 Quick question: **how old do you think your heart is?**
 *(pause)*
-Here's the surprise: the story of a heart attack at 40 often starts **at 14.**
+Here's the surprise: the story of a heart attack at 40 can start **in your teens.**
 My poster is called **"Before the Statin"**, because the best time to protect your heart is long before you ever need a pill.
 
 ### 2. The silent bucket (0:20–0:50)
