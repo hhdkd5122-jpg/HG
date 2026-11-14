@@ -272,43 +272,37 @@ section{position:relative}
  <div>
   <div class="ribbon" style="width:100%"><span>How bergamot may work</span></div>
   <div class="card" style="margin-top:20px;padding:20px 24px">
-   <svg viewBox="0 0 1000 400" width="100%" style="display:block">
-    <defs><marker id="ar2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10z" fill="#1d3a1a"/></marker></defs>
-    <rect x="4" y="4" width="992" height="250" rx="30" fill="#f1f5e4" stroke="#cfdcae" stroke-width="3"/>
-    <text x="30" y="40" font-family="Oswald" font-weight="600" font-size="20" letter-spacing="3" fill="#4f7d3a">LIVER CELL</text>
-    <g font-family="Oswald" font-weight="600" font-size="25" text-anchor="middle" fill="#1d3a1a">
-     <rect x="24" y="72" width="168" height="56" rx="28" fill="#fff" stroke="#cfc6b0" stroke-width="2"/><text x="108" y="108">Acetyl-CoA</text>
-     <rect x="262" y="72" width="160" height="56" rx="28" fill="#fff" stroke="#cfc6b0" stroke-width="2"/><text x="342" y="108">HMG-CoA</text>
-     <rect x="534" y="72" width="170" height="56" rx="28" fill="#fff" stroke="#cfc6b0" stroke-width="2"/><text x="619" y="108">Mevalonate</text>
-     <rect x="790" y="72" width="186" height="56" rx="28" fill="#1d3a1a"/><text x="883" y="108" fill="#fff">Cholesterol ↓</text>
-    </g>
-    <g stroke="#1d3a1a" stroke-width="3.5" marker-end="url(#ar2)"><path d="M194 100 H256"/><path d="M424 100 H528"/><path d="M706 100 H784"/></g>
-    <text x="476" y="64" text-anchor="middle" font-family="Inter" font-weight="700" font-size="17" fill="#5d6553">HMG-CoA reductase</text>
-    <!-- inhibitors -->
-    <path d="M462 102 V160 M448 160" stroke="#1d3a1a" stroke-width="0"/>
-    <path d="M458 104 V150 M444 104 H472" stroke="#2e5a26" stroke-width="6"/>
-    <rect x="384" y="152" width="140" height="42" rx="21" fill="#2e5a26"/><text x="454" y="180" text-anchor="middle" font-family="Oswald" font-weight="600" font-size="21" fill="#fff">Statins</text>
-    <path d="M500 104 C 520 130, 560 140, 586 152 M486 104 H514" stroke="#a9be2c" stroke-width="6" stroke-dasharray="9 6" fill="none"/>
-    <rect x="540" y="152" width="250" height="42" rx="21" fill="#a9be2c"/><text x="665" y="180" text-anchor="middle" font-family="Oswald" font-weight="600" font-size="21" fill="#1d3a1a">Bergamot flavanones?</text>
-    <text x="665" y="216" text-anchor="middle" font-family="Inter" font-style="italic" font-size="16" fill="#5d6553">brutieridin &amp; melitidin (proposed)</text>
-    <!-- SREBP / receptors -->
-    <path d="M883 130 V238" stroke="#1d3a1a" stroke-width="3" stroke-dasharray="5 6" marker-end="url(#ar2)"/>
-    <text x="898" y="186" font-family="Inter" font-weight="700" font-size="17" fill="#1d3a1a">more LDL</text><text x="898" y="208" font-family="Inter" font-weight="700" font-size="17" fill="#1d3a1a">receptors</text>
-    <path d="M4 254 H996" stroke="#2e5a26" stroke-width="10"/>
-    <g fill="#4f7d3a"><path d="M760 254 V282 a13 13 0 0 0 26 0 V254z"/><path d="M830 254 V282 a13 13 0 0 0 26 0 V254z"/><path d="M900 254 V282 a13 13 0 0 0 26 0 V254z"/></g>
-    <g fill="#d9a940"><circle cx="773" cy="318" r="17"/><circle cx="843" cy="318" r="17"/><circle cx="913" cy="318" r="17"/></g>
-    <text x="843" y="370" text-anchor="middle" font-family="Oswald" font-weight="600" font-size="22" fill="#1d3a1a">LDL cleared from blood</text>
-    <text x="30" y="292" font-family="Oswald" font-weight="600" font-size="20" letter-spacing="3" fill="#5b7fa3">BLOOD</text>
-    <!-- extra actions -->
-    <g font-family="Inter" font-size="17">
-     <rect x="30" y="306" width="330" height="80" rx="14" fill="#fbf2d8" stroke="#e7d39c"/>
-     <text x="48" y="338" font-family="Oswald" font-weight="600" font-size="21" fill="#b9852a">ANTIOXIDANT</text>
-     <text x="48" y="366" fill="#2a2a1e">↓ oxidised-LDL receptor LOX-1</text>
-     <rect x="380" y="306" width="330" height="80" rx="14" fill="#eef3d6" stroke="#cfdcae"/>
-     <text x="398" y="338" font-family="Oswald" font-weight="600" font-size="21" fill="#4f7d3a">LIVER FAT</text>
-     <text x="398" y="366" fill="#2a2a1e">↑ fat clearance (animal model)</text>
-    </g>
-   </svg>
+   <svg viewBox="0 0 1000 400" width="100%" style="display:block;background:#fff" font-family="Carlito, Calibri, Arial, sans-serif">
+<defs><marker id="oa" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10z" fill="#404040"/></marker></defs>
+<rect x="0" y="40" width="140" height="70" rx="8" fill="#4472C4" stroke="#ffffff" stroke-width="2"/>
+<text x="70" y="83" text-anchor="middle" font-size="22" font-weight="700" fill="#fff">Acetyl-CoA</text>
+<path d="M144 65.0 h12 v-8 l12 18 l-12 18 v-8 h-12z" fill="#A5A5A5"/>
+<rect x="172" y="40" width="140" height="70" rx="8" fill="#4472C4" stroke="#ffffff" stroke-width="2"/>
+<text x="242" y="83" text-anchor="middle" font-size="22" font-weight="700" fill="#fff">HMG-CoA</text>
+<path d="M316 65.0 h12 v-8 l12 18 l-12 18 v-8 h-12z" fill="#A5A5A5"/>
+<rect x="344" y="40" width="140" height="70" rx="8" fill="#4472C4" stroke="#ffffff" stroke-width="2"/>
+<text x="414" y="83" text-anchor="middle" font-size="22" font-weight="700" fill="#fff">Mevalonate</text>
+<path d="M488 65.0 h12 v-8 l12 18 l-12 18 v-8 h-12z" fill="#A5A5A5"/>
+<rect x="516" y="40" width="140" height="70" rx="8" fill="#70AD47" stroke="#ffffff" stroke-width="2"/>
+<text x="586" y="71" text-anchor="middle" font-size="22" font-weight="700" fill="#fff">Cholesterol</text>
+<text x="586" y="95" text-anchor="middle" font-size="22" font-weight="700" fill="#fff">in liver ↓</text>
+<path d="M660 65.0 h12 v-8 l12 18 l-12 18 v-8 h-12z" fill="#A5A5A5"/>
+<rect x="688" y="40" width="140" height="70" rx="8" fill="#70AD47" stroke="#ffffff" stroke-width="2"/>
+<text x="758" y="71" text-anchor="middle" font-size="22" font-weight="700" fill="#fff">LDL</text>
+<text x="758" y="95" text-anchor="middle" font-size="22" font-weight="700" fill="#fff">receptors ↑</text>
+<path d="M832 65.0 h12 v-8 l12 18 l-12 18 v-8 h-12z" fill="#A5A5A5"/>
+<rect x="860" y="40" width="140" height="70" rx="8" fill="#70AD47" stroke="#ffffff" stroke-width="2"/>
+<text x="930" y="71" text-anchor="middle" font-size="22" font-weight="700" fill="#fff">Blood</text>
+<text x="930" y="95" text-anchor="middle" font-size="22" font-weight="700" fill="#fff">LDL-C ↓</text>
+<text x="328" y="144" text-anchor="middle" font-size="19" fill="#595959" font-style="italic">HMG-CoA reductase</text>
+<path d="M268 200 L316 156" stroke="#4472C4" stroke-width="2.5" marker-end="url(#oa)"/>
+<path d="M398 200 L342 156" stroke="#ED7D31" stroke-width="2.5" stroke-dasharray="7 5" marker-end="url(#oa)"/>
+<rect x="78" y="200" width="210" height="62" fill="#fff" stroke="#4472C4" stroke-width="2"/><text x="183" y="226" text-anchor="middle" font-size="21" font-weight="700" fill="#4472C4">Statins</text><text x="183" y="250" text-anchor="middle" font-size="18" fill="#595959">inhibit (proven)</text>
+<rect x="368" y="200" width="300" height="62" fill="#fff" stroke="#ED7D31" stroke-width="2" stroke-dasharray="7 5"/><text x="518" y="226" text-anchor="middle" font-size="21" font-weight="700" fill="#ED7D31">Bergamot flavanones</text><text x="518" y="250" text-anchor="middle" font-size="18" fill="#595959">brutieridin, melitidin (proposed)</text>
+<rect x="20" y="292" width="960" height="34" fill="#E7E6E6"/><text x="34" y="316" font-size="20" font-weight="700" fill="#262626">Other proposed effects of bergamot polyphenols</text>
+<rect x="20" y="326" width="480" height="60" fill="#fff" stroke="#BFBFBF"/><text x="34" y="352" font-size="19" font-weight="700" fill="#262626">Antioxidant</text><text x="34" y="376" font-size="18" fill="#595959">↓ LOX-1 (oxidised-LDL receptor) · Gliozzi 2013</text>
+<rect x="500" y="326" width="480" height="60" fill="#fff" stroke="#BFBFBF"/><text x="514" y="352" font-size="19" font-weight="700" fill="#262626">Liver fat</text><text x="514" y="376" font-size="18" fill="#595959">↑ fat clearance (lipophagy), rat model · Parafati 2015</text>
+</svg>
    <div style="font-size:16px;color:#7b8170;margin-top:6px">Mechanisms are proposed, mostly from laboratory and small human studies (Gliozzi 2013; Parafati 2015).</div>
   </div>
  </div>
@@ -337,34 +331,40 @@ section{position:relative}
   <div class="ribbon" style="width:100%"><span>The hypothesis in one graph</span></div>
   <div class="card" style="margin-top:20px;padding:20px 26px 16px">
    <div class="ch"><span class="ci"><svg width="34" height="34" viewBox="0 0 34 34"><path d="M4 30 L12 20 L18 24 L30 6" stroke="#d9a940" stroke-width="4" fill="none" stroke-linecap="round"/></svg></span><h4>Cumulative LDL-C exposure<small>Illustrative model: the earlier the slope falls, the later the threshold is reached</small></h4></div>
-   <svg viewBox="0 0 1500 520" width="100%" style="display:block;margin-top:10px">
-    <defs><marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10z" fill="#1d3a1a"/></marker>
-    <linearGradient id="areaR" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b5483a" stop-opacity=".2"/><stop offset="1" stop-color="#b5483a" stop-opacity="0"/></linearGradient></defs>
-    <g font-family="Inter" font-size="20" fill="#5d6553" font-weight="600">
-     <path d="M90 440 H1450" stroke="#cfc6b0" stroke-width="2"/>
-     <g text-anchor="middle"><text x="90" y="474">0</text><text x="317" y="474">10</text><text x="543" y="474">20</text><text x="770" y="474">30</text><text x="997" y="474">40</text><text x="1223" y="474">50</text><text x="1450" y="474">60 y</text></g>
-     <text x="78" y="446" text-anchor="end">0</text><text x="78" y="246" text-anchor="end">100</text><text x="78" y="46" text-anchor="end">200</text>
-     <g stroke="#ece5d3" stroke-width="2"><path d="M90 240 H1450"/><path d="M90 40 H1450"/></g>
-    </g>
-    <rect x="410" y="40" width="110" height="400" fill="#a9be2c" opacity=".22"/>
-    <text x="465" y="506" text-anchor="middle" font-family="Oswald" font-weight="600" font-size="22" fill="#4f7d3a">YOUNG PATIENTS</text>
-    <path d="M90 120 H1450" stroke="#b5483a" stroke-width="3" stroke-dasharray="12 8"/>
-    <text x="100" y="106" font-family="Inter" font-weight="700" font-size="21" fill="#b5483a">Threshold where coronary events start to appear (~160 mmol-years)</text>
-    <path d="M90 440 L1450 40" stroke="#a7a48f" stroke-width="5"/>
-    <path d="M90 440 L997 120 L1223 40" stroke="#b5483a" stroke-width="7" fill="none" stroke-linecap="round"/>
-    <path d="M90 440 L997 120 L997 440 Z" fill="url(#areaR)"/>
-    <path d="M453 312 L1133 120 L1290 76" stroke="#2e5a26" stroke-width="7" fill="none" stroke-linecap="round"/>
-    <circle cx="453" cy="312" r="12" fill="#d9a940" stroke="#1d3a1a" stroke-width="3"/>
-    <circle cx="997" cy="120" r="13" fill="#b5483a"/><circle cx="1133" cy="120" r="13" fill="#2e5a26"/>
-    <path d="M1005 152 H1125" stroke="#1d3a1a" stroke-width="3" marker-end="url(#arr)"/>
-    <text x="1065" y="205" text-anchor="middle" font-family="Bebas Neue" font-size="54" fill="#1d3a1a">+6 YEARS</text>
-    <g font-family="Inter" font-weight="700" font-size="21">
-     <rect x="1010" y="270" width="440" height="140" rx="16" fill="#fffdf7" stroke="#e7dfca" stroke-width="2"/>
-     <path d="M1032 304 H1076" stroke="#b5483a" stroke-width="7" stroke-linecap="round"/><text x="1090" y="311" fill="#1c2418">High risk, untreated (LDL 4.0)</text>
-     <path d="M1032 342 H1076" stroke="#2e5a26" stroke-width="7" stroke-linecap="round"/><text x="1090" y="349" fill="#1c2418">Bergamot started early (−0.8)</text>
-     <path d="M1032 380 H1076" stroke="#a7a48f" stroke-width="5"/><text x="1090" y="387" fill="#1c2418">Average (LDL 3.0)</text>
-    </g>
-   </svg>
+   <svg viewBox="0 0 1500 520" width="100%" style="display:block;margin-top:10px;background:#fff" font-family="Carlito, Calibri, Arial, sans-serif">
+<text x="750.0" y="34" text-anchor="middle" font-size="28" fill="#595959">Cumulative LDL-C exposure by age (illustrative model)</text>
+<rect x="455" y="60" width="97" height="320" fill="#FFF2CC"/>
+<text x="504" y="84" text-anchor="middle" font-size="18" fill="#7F6000">Young</text><text x="504" y="104" text-anchor="middle" font-size="18" fill="#7F6000">patients</text>
+<path d="M120 380.0 H1460" stroke="#D9D9D9" stroke-width="1.5"/><text x="108" y="387.0" text-anchor="end" font-size="20" fill="#595959">0</text>
+<path d="M120 316.0 H1460" stroke="#D9D9D9" stroke-width="1.5"/><text x="108" y="323.0" text-anchor="end" font-size="20" fill="#595959">40</text>
+<path d="M120 252.0 H1460" stroke="#D9D9D9" stroke-width="1.5"/><text x="108" y="259.0" text-anchor="end" font-size="20" fill="#595959">80</text>
+<path d="M120 188.0 H1460" stroke="#D9D9D9" stroke-width="1.5"/><text x="108" y="195.0" text-anchor="end" font-size="20" fill="#595959">120</text>
+<path d="M120 124.0 H1460" stroke="#D9D9D9" stroke-width="1.5"/><text x="108" y="131.0" text-anchor="end" font-size="20" fill="#595959">160</text>
+<path d="M120 60.0 H1460" stroke="#D9D9D9" stroke-width="1.5"/><text x="108" y="67.0" text-anchor="end" font-size="20" fill="#595959">200</text>
+<text x="120.0" y="410" text-anchor="middle" font-size="20" fill="#595959">0</text>
+<text x="343.3" y="410" text-anchor="middle" font-size="20" fill="#595959">10</text>
+<text x="566.7" y="410" text-anchor="middle" font-size="20" fill="#595959">20</text>
+<text x="790.0" y="410" text-anchor="middle" font-size="20" fill="#595959">30</text>
+<text x="1013.3" y="410" text-anchor="middle" font-size="20" fill="#595959">40</text>
+<text x="1236.7" y="410" text-anchor="middle" font-size="20" fill="#595959">50</text>
+<text x="1460.0" y="410" text-anchor="middle" font-size="20" fill="#595959">60</text>
+<path d="M120 380 H1460" stroke="#BFBFBF" stroke-width="2"/>
+<text x="790.0" y="442" text-anchor="middle" font-size="22" font-weight="700" fill="#595959">Age (years)</text>
+<text transform="translate(34 220.0) rotate(-90)" text-anchor="middle" font-size="22" font-weight="700" fill="#595959">mmol/L × years</text>
+<path d="M120.0 124.0 L1460.0 124.0" fill="none" stroke="#C00000" stroke-width="3" stroke-dasharray="10 6"/>
+<path d="M120.0 380.0 L1460.0 92.0" fill="none" stroke="#A5A5A5" stroke-width="4" />
+<path d="M120.0 380.0 L1236.7 60.0" fill="none" stroke="#ED7D31" stroke-width="4" />
+<path d="M120.0 380.0 L477.3 277.6 L1432.1 60.0" fill="none" stroke="#4472C4" stroke-width="4" />
+<circle cx="1013.3" cy="124.0" r="8" fill="#ED7D31" stroke="#fff" stroke-width="2"/>
+<circle cx="1147.3" cy="124.0" r="8" fill="#4472C4" stroke="#fff" stroke-width="2"/>
+<path d="M1023.3 150.0 H1135.3" stroke="#404040" stroke-width="2.5" marker-end="url(#la)"/><defs><marker id="la" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10z" fill="#404040"/></marker></defs>
+<rect x="1003.3" y="164.0" width="170" height="40" fill="#fff" stroke="#404040" stroke-width="1.5"/><text x="1088.3" y="192.0" text-anchor="middle" font-size="22" font-weight="700" fill="#262626">≈6 years later</text>
+<text x="142.3" y="114.0" font-size="19" fill="#C00000">Event threshold (~160)</text>
+<path d="M200 487 h40" stroke="#ED7D31" stroke-width="4" /><text x="250" y="494" font-size="20" fill="#595959">High risk, untreated (LDL-C 4.0)</text>
+<path d="M616.4 487 h40" stroke="#4472C4" stroke-width="4" /><text x="666.4" y="494" font-size="20" fill="#595959">Bergamot started early (−0.8)</text>
+<path d="M1002.1999999999999 487 h40" stroke="#A5A5A5" stroke-width="4" /><text x="1052.1999999999998" y="494" font-size="20" fill="#595959">Average (LDL-C 3.0)</text>
+<path d="M1286.0 487 h40" stroke="#C00000" stroke-width="4" stroke-dasharray="10 6"/><text x="1336.0" y="494" font-size="20" fill="#595959">Event threshold</text>
+</svg>
    <div style="font-size:16px;color:#7b8170;margin-top:4px">Conceptual curves (LDL-C × years, mmol/L). Based on the cumulative-exposure principle: Ference 2012 &amp; 2017; Jacobs (i3C) 2022.</div>
   </div>
  </div>
@@ -372,25 +372,22 @@ section{position:relative}
   <div class="ribbon" style="width:100%"><span>Who has been studied?</span></div>
   <div class="card" style="margin-top:20px;padding:22px 26px">
    <div style="display:grid;grid-template-columns:330px 1fr;gap:24px;align-items:center">
-    <svg viewBox="0 0 330 330" width="330" height="330">
-     <g transform="translate(165 165) rotate(-90)" fill="none" stroke-width="80">
-      <!-- C = 2*pi*115 = 722.6 ; 3/7=309.7, 2/7=206.5, 1/7=103.2 -->
-      <circle r="115" stroke="#2e5a26" stroke-dasharray="306 722.6"/>
-      <circle r="115" stroke="#b9852a" stroke-dasharray="203 722.6" stroke-dashoffset="-309.7"/>
-      <circle r="115" stroke="#b5483a" stroke-dasharray="100 722.6" stroke-dashoffset="-516.2"/>
-      <circle r="115" stroke="#5b7fa3" stroke-dasharray="100 722.6" stroke-dashoffset="-619.4"/>
-     </g>
-     <circle cx="165" cy="165" r="74" fill="#fffdf7"/>
-     <text x="165" y="168" text-anchor="middle" font-family="Bebas Neue" font-size="78" fill="#b5483a">0</text>
-     <text x="165" y="196" text-anchor="middle" font-family="Oswald" font-weight="600" font-size="17" fill="#1c2418">IN YOUNG</text>
-     <text x="165" y="216" text-anchor="middle" font-family="Oswald" font-weight="600" font-size="17" fill="#1c2418">PATIENTS</text>
-     <g font-family="Oswald" font-weight="600" font-size="28" fill="#fff" text-anchor="middle"><text x="250" y="230">43%</text><text x="92" y="250">29%</text><text x="70" y="128">14%</text><text x="125" y="74">14%</text></g>
-    </svg>
+    <svg viewBox="0 0 330 330" width="330" height="330" font-family="Carlito, Calibri, Arial, sans-serif">
+<path d="M165.0 15.0 A150 150 0 0 1 230.1 300.1 L198.8 235.3 A78 78 0 0 0 165.0 87.0 Z" fill="#4472C4" stroke="#fff" stroke-width="3"/>
+<text x="276.1" y="147.6" text-anchor="middle" font-size="24" font-weight="700" fill="#fff">43%</text>
+<path d="M230.1 300.1 A150 150 0 0 1 18.8 198.4 L89.0 182.4 A78 78 0 0 0 198.8 235.3 Z" fill="#ED7D31" stroke="#fff" stroke-width="3"/>
+<text x="115.5" y="275.7" text-anchor="middle" font-size="24" font-weight="700" fill="#fff">29%</text>
+<path d="M18.8 198.4 A150 150 0 0 1 47.7 71.5 L104.0 116.4 A78 78 0 0 0 89.0 182.4 Z" fill="#A5A5A5" stroke="#fff" stroke-width="3"/>
+<text x="53.9" y="147.6" text-anchor="middle" font-size="24" font-weight="700" fill="#fff">14%</text>
+<path d="M47.7 71.5 A150 150 0 0 1 165.0 15.0 L165.0 87.0 A78 78 0 0 0 104.0 116.4 Z" fill="#FFC000" stroke="#fff" stroke-width="3"/>
+<text x="115.5" y="70.3" text-anchor="middle" font-size="24" font-weight="700" fill="#fff">14%</text>
+<text x="165" y="171" text-anchor="middle" font-size="46" font-weight="700" fill="#C00000">0</text><text x="165" y="195" text-anchor="middle" font-size="17" fill="#595959">in young</text><text x="165" y="213" text-anchor="middle" font-size="17" fill="#595959">patients</text>
+</svg>
     <div class="leg">
-     <div class="lg"><span class="dot" style="background:#2e5a26">3</span><span class="pc" style="color:#2e5a26">43%</span><span class="nm">High cholesterol<small>Gliozzi · Fogacci · Stonehouse</small></span></div>
-     <div class="lg"><span class="dot" style="background:#b9852a">2</span><span class="pc" style="color:#b9852a">29%</span><span class="nm">Overweight / metabolic<small>Capomolla · Rondanelli</small></span></div>
-     <div class="lg"><span class="dot" style="background:#b5483a">1</span><span class="pc" style="color:#b5483a">14%</span><span class="nm">Type 2 diabetes<small>Mollace</small></span></div>
-     <div class="lg"><span class="dot" style="background:#5b7fa3">1</span><span class="pc" style="color:#5b7fa3">14%</span><span class="nm">Fatty liver<small>Ferro</small></span></div>
+     <div class="lg"><span class="dot" style="background:#4472C4">3</span><span class="pc" style="color:#4472C4">43%</span><span class="nm">High cholesterol<small>Gliozzi · Fogacci · Stonehouse</small></span></div>
+     <div class="lg"><span class="dot" style="background:#ED7D31">2</span><span class="pc" style="color:#ED7D31">29%</span><span class="nm">Overweight / metabolic<small>Capomolla · Rondanelli</small></span></div>
+     <div class="lg"><span class="dot" style="background:#A5A5A5">1</span><span class="pc" style="color:#7F7F7F">14%</span><span class="nm">Type 2 diabetes<small>Mollace</small></span></div>
+     <div class="lg"><span class="dot" style="background:#FFC000">1</span><span class="pc" style="color:#BF9000">14%</span><span class="nm">Fatty liver<small>Ferro</small></span></div>
     </div>
    </div>
    <div class="note" style="margin-top:16px"><span class="ni"><svg width="32" height="32" viewBox="0 0 32 32"><circle cx="16" cy="16" r="14" fill="#b5483a"/><text x="16" y="23" text-anchor="middle" font-family="Oswald" font-weight="700" font-size="20" fill="#fff">!</text></svg></span><span>All 7 key bergamot RCTs were in <b>adults</b>; one found <b>no effect</b> (Stonehouse 2025). <b>No trial in young patients yet.</b></span></div>
@@ -421,13 +418,23 @@ section{position:relative}
   <div class="ribbon" style="width:100%"><span>Bergamot across risk factors (adult RCTs)</span></div>
   <div class="rgrid" style="margin-top:20px">
    <div class="rk"><div class="ch"><span class="ci" style="width:54px;height:54px"><svg width="28" height="28" viewBox="0 0 28 28"><path d="M14 2c-3 5-8 9-8 14a8 8 0 0 0 16 0c0-5-5-9-8-14z" fill="#d9a940"/></svg></span><h4 style="font-size:28px">LDL-C<small>3 meta-analyses</small></h4></div>
-    <svg viewBox="0 0 380 190" width="100%" height="150" style="margin-top:8px">
-     <g font-family="Inter" font-size="16" font-weight="600" fill="#5d6553">
-      <rect x="20" y="40" width="80" height="138" rx="8" fill="#2e5a26"/><text x="60" y="30" text-anchor="middle" font-family="Oswald" font-size="26" fill="#1d3a1a">−55</text>
-      <rect x="150" y="78" width="80" height="100" rx="8" fill="#4f7d3a"/><text x="190" y="68" text-anchor="middle" font-family="Oswald" font-size="26" fill="#1d3a1a">−40</text>
-      <rect x="280" y="61" width="80" height="117" rx="8" fill="#b9852a"/><text x="320" y="51" text-anchor="middle" font-family="Oswald" font-size="26" fill="#1d3a1a">−47</text>
-     </g>
-    </svg>
+    <svg viewBox="0 0 380 190" width="100%" height="150" style="margin-top:8px;background:#fff" font-family="Carlito, Calibri, Arial, sans-serif">
+<path d="M46 150.0 H372" stroke="#D9D9D9"/><text x="40" y="155.0" text-anchor="end" font-size="13" fill="#595959">0</text>
+<path d="M46 104.7 H372" stroke="#D9D9D9"/><text x="40" y="109.7" text-anchor="end" font-size="13" fill="#595959">20</text>
+<path d="M46 59.3 H372" stroke="#D9D9D9"/><text x="40" y="64.3" text-anchor="end" font-size="13" fill="#595959">40</text>
+<path d="M46 14.0 H372" stroke="#D9D9D9"/><text x="40" y="19.0" text-anchor="end" font-size="13" fill="#595959">60</text>
+<rect x="72.3" y="25.3" width="56" height="124.7" fill="#4472C4"/>
+<text x="100.3" y="20.3" text-anchor="middle" font-size="15" font-weight="700" fill="#262626">−55</text>
+<text x="100.3" y="168" text-anchor="middle" font-size="13" fill="#595959">Sadeghi 22</text>
+<rect x="181.0" y="59.3" width="56" height="90.7" fill="#4472C4"/>
+<text x="209.0" y="54.3" text-anchor="middle" font-size="15" font-weight="700" fill="#262626">−40</text>
+<text x="209.0" y="168" text-anchor="middle" font-size="13" fill="#595959">Chambari 26</text>
+<rect x="289.7" y="43.5" width="56" height="106.5" fill="#4472C4"/>
+<text x="317.7" y="38.5" text-anchor="middle" font-size="15" font-weight="700" fill="#262626">−47</text>
+<text x="317.7" y="168" text-anchor="middle" font-size="13" fill="#595959">Osadnik 22</text>
+<path d="M46 150.0 H372" stroke="#BFBFBF" stroke-width="1.5"/>
+<text transform="translate(12 82.0) rotate(-90)" text-anchor="middle" font-size="12" fill="#595959">mg/dL</text>
+</svg>
     <div class="s">mg/dL · 14 trials (2022) · 9 RCTs (2026) · network MA, #1 of 10 nutraceuticals</div>
    </div>
    <div class="rk"><div class="ch"><span class="ci" style="width:54px;height:54px"><svg width="28" height="28" viewBox="0 0 28 28"><circle cx="9" cy="14" r="6" fill="#d9a940"/><circle cx="20" cy="10" r="5" fill="#d9a940"/><circle cx="20" cy="21" r="4" fill="#d9a940"/></svg></span><h4 style="font-size:28px">TG &amp; HDL-C<small>pooled, 9 RCTs</small></h4></div>
@@ -443,12 +450,16 @@ section{position:relative}
     <div class="s" style="margin-top:12px">Small but consistent effect; certainty low to very low.</div>
    </div>
    <div class="rk" style="border-top-color:var(--gold)"><div class="ch"><span class="ci" style="width:54px;height:54px"><svg width="28" height="28" viewBox="0 0 28 28"><path d="M3 14 C 8 6, 20 6, 25 12 C 22 20, 10 22, 3 14Z" fill="#d9a940"/></svg></span><h4 style="font-size:28px">Fatty liver<small>Ferro 2020, n = 102</small></h4></div>
-    <svg viewBox="0 0 380 150" width="100%" style="margin-top:12px">
-     <g font-family="Inter" font-size="17" font-weight="600" fill="#1c2418">
-      <text x="0" y="40">Bergamot</text><rect x="110" y="20" width="250" height="30" rx="8" fill="#2e5a26"/><text x="352" y="42" text-anchor="end" fill="#fff" font-family="Oswald" font-size="20">−48 dB/m</text>
-      <text x="0" y="100">Placebo</text><rect x="110" y="80" width="140" height="30" rx="8" fill="#c9c1a8"/><text x="242" y="102" text-anchor="end" fill="#1c2418" font-family="Oswald" font-size="20">−27</text>
-     </g>
-    </svg>
+    <svg viewBox="0 0 380 150" width="100%" style="margin-top:12px;background:#fff" font-family="Carlito, Calibri, Arial, sans-serif">
+<path d="M96.0 10 V102" stroke="#D9D9D9"/><text x="96.0" y="120" text-anchor="middle" font-size="13" fill="#595959">0</text>
+<path d="M184.0 10 V102" stroke="#D9D9D9"/><text x="184.0" y="120" text-anchor="middle" font-size="13" fill="#595959">20</text>
+<path d="M272.0 10 V102" stroke="#D9D9D9"/><text x="272.0" y="120" text-anchor="middle" font-size="13" fill="#595959">40</text>
+<path d="M360.0 10 V102" stroke="#D9D9D9"/><text x="360.0" y="120" text-anchor="middle" font-size="13" fill="#595959">60</text>
+<text x="88" y="44" text-anchor="end" font-size="16" fill="#262626">Bergamot</text><rect x="96" y="22" width="211.2" height="30" fill="#ED7D31"/><text x="313.2" y="43" font-size="15" font-weight="700" fill="#262626">−48</text>
+<text x="88" y="86" text-anchor="end" font-size="16" fill="#262626">Placebo</text><rect x="96" y="64" width="118.8" height="30" fill="#A5A5A5"/><text x="220.8" y="85" font-size="15" font-weight="700" fill="#262626">−27</text>
+<path d="M96 10 V102" stroke="#BFBFBF" stroke-width="1.5"/>
+<text x="228.0" y="144" text-anchor="middle" font-size="13" fill="#595959">Liver fat reduction (CAP, dB/m)</text>
+</svg>
     <div class="s">Liver fat (CAP score), 12 weeks</div>
    </div>
    <div class="rk" style="border-top-color:#5b7fa3"><div class="ch"><span class="ci" style="width:54px;height:54px"><svg width="28" height="28" viewBox="0 0 28 28"><path d="M4 9 H24 M6 9 C 6 22, 22 22, 22 9" stroke="#d9a940" stroke-width="3" fill="none"/></svg></span><h4 style="font-size:28px">Waist &amp; inflammation<small>pooled + single RCTs</small></h4></div>
