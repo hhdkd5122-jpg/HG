@@ -28,7 +28,7 @@ header .logo{position:absolute;right:60px;top:46px;background:#fff;padding:16px 
 header .logo img{height:170px;display:block}
 
 /* layout */
-.row{display:grid;gap:40px;padding:0 60px;margin-top:40px}
+.row{display:grid;gap:40px;padding:0 60px;margin-top:32px}
 .sh{gap:16px;height:58px;background:var(--g);color:#fff;font-family:Oswald;font-weight:600;font-size:33px;letter-spacing:.05em;text-transform:uppercase;display:flex;align-items:center;padding-left:22px;border-left:14px solid var(--gold)}
 .box{background:#fff;border:2px solid var(--line);border-top:0;padding:24px 28px}
 .cite{font-size:20px;color:var(--muted);margin-top:12px;line-height:1.3}
@@ -75,7 +75,7 @@ ol.det b{display:block;color:var(--g);font-size:27px}
 .pa.b{border-color:var(--g);background:#eef1ec} .pa.b .h{color:var(--g)}
 
 /* conclusion + footer */
-.concl{position:relative;margin:40px 60px 0;border:3px solid var(--g);background:#fff;padding:22px 250px 22px 32px;display:grid;grid-template-columns:260px 1fr;gap:28px;align-items:center}
+.concl{position:relative;margin:32px 60px 0;border:3px solid var(--g);background:#fff;padding:22px 250px 22px 32px;display:grid;grid-template-columns:260px 1fr;gap:28px;align-items:center}
 .concl .h{font-family:Oswald;font-weight:600;font-size:40px;color:var(--g);letter-spacing:.04em;border-right:3px solid var(--gold);height:100%;display:flex;align-items:center}
 .concl p{font-size:29px;line-height:1.34}
 .concl .csprig{position:absolute;right:18px;bottom:8px;opacity:.85}
@@ -111,6 +111,19 @@ footer .qr{background:#fff;padding:12px}
 <path d="M310.5 20.0 Q314.5 18.1 313.2 16.2" fill="none" stroke="#d9a940" stroke-width="0.72" opacity=".8"/><circle cx="260" cy="20" r="11" fill="none" stroke="#d9a940" stroke-width="2"/><circle cx="260" cy="9" r="1.5" fill="#d9a940"/></svg></div>
  <div class="auth"><b>Noor Al Ahmad</b> &nbsp;|&nbsp; Department of Pharmacy, Al Ain University, Al Ain, UAE</div>
  <div class="branch"><svg viewBox="0 0 760 500" width="760" height="500" stroke-linecap="round" stroke-linejoin="round">
+<defs><filter id="wc" x="-20%" y="-20%" width="140%" height="140%"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="3" seed="7" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="16" xChannelSelector="R" yChannelSelector="G" result="d"/><feGaussianBlur in="d" stdDeviation="1.2"/></filter><radialGradient id="wcFruit" cx="38%" cy="32%" r="75%"><stop offset="0" stop-color="#f3f19a"/><stop offset=".55" stop-color="#c9d34a"/><stop offset="1" stop-color="#7e9a2a"/></radialGradient><radialGradient id="wcSlice" cx="50%" cy="50%" r="60%"><stop offset="0" stop-color="#fbf6c8"/><stop offset=".8" stop-color="#ecdc6a"/><stop offset="1" stop-color="#b9c43a"/></radialGradient><linearGradient id="wcLeaf" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7fb069"/><stop offset="1" stop-color="#3f6e34"/></linearGradient></defs>
+<g filter="url(#wc)" opacity=".82">
+<path d="M90.0 432.0 C110.5 359.5 55.7 313.2 15.0 302.1 C4.3 342.9 17.0 413.5 90.0 432.0Z" fill="url(#wcLeaf)"/>
+<path d="M170.0 392.0 C143.6 316.1 67.4 309.2 25.0 324.4 C40.6 366.6 94.9 420.5 170.0 392.0Z" fill="url(#wcLeaf)"/>
+<path d="M250.0 352.0 C299.2 295.0 269.1 229.9 236.9 202.6 C210.0 235.0 191.6 304.4 250.0 352.0Z" fill="url(#wcLeaf)"/>
+<path d="M400.0 268.0 C365.0 190.1 283.7 189.9 240.3 209.9 C260.7 253.1 323.2 305.2 400.0 268.0Z" fill="url(#wcLeaf)"/>
+<path d="M470.0 225.0 C538.7 194.1 539.0 122.4 521.3 84.0 C483.1 102.1 437.2 157.2 470.0 225.0Z" fill="url(#wcLeaf)"/>
+<path d="M640.0 140.0 C653.2 71.0 598.5 32.4 559.7 25.3 C553.1 64.2 570.6 128.8 640.0 140.0Z" fill="url(#wcLeaf)"/>
+<path d="M690.0 128.0 C633.9 94.6 582.9 130.1 564.4 161.6 C596.2 179.8 658.2 185.0 690.0 128.0Z" fill="url(#wcLeaf)"/>
+<path d="M585.0 72.0 C638.5 58.5 647.9 6.7 640.0 -23.3 C610.1 -15.1 570.0 18.9 585.0 72.0Z" fill="url(#wcLeaf)"/>
+<circle cx="350" cy="300" r="95" fill="url(#wcFruit)"/><circle cx="560" cy="250" r="72" fill="url(#wcFruit)"/><circle cx="150" cy="230" r="78" fill="url(#wcSlice)"/><circle cx="700" cy="60" r="26" fill="#fbf7ea" opacity=".9"/><circle cx="640" cy="330" r="16" fill="#fbf7ea" opacity=".9"/>
+</g>
+
 <path d="M20 470 C 160 400, 300 330, 430 250 C 520 195, 610 150, 740 120" fill="none" stroke="#d9a940" stroke-width="5"/>
 <path d="M300 330 C 300 290, 320 250, 350 222" fill="none" stroke="#d9a940" stroke-width="3.5"/>
 <path d="M560 168 C 580 140, 590 105, 585 70" fill="none" stroke="#d9a940" stroke-width="3"/>
@@ -323,6 +336,7 @@ footer .qr{background:#fff;padding:12px}
 <path d="M640 330 L639.3 321.7" stroke="#d9a940" stroke-width="1.1"/><circle cx="639.2" cy="321.2" r="2.0" fill="#d9a940"/>
 <path d="M640 330 L645.4 323.6" stroke="#d9a940" stroke-width="1.1"/><circle cx="645.7" cy="323.3" r="2.0" fill="#d9a940"/>
 <path d="M640 330 L648.3 329.3" stroke="#d9a940" stroke-width="1.1"/><circle cx="648.8" cy="329.2" r="2.0" fill="#d9a940"/>
+
 </svg></div>
  <div class="logo"><img src="logo_aau.png" alt="Al Ain University"></div>
 </header>
@@ -332,12 +346,33 @@ footer .qr{background:#fff;padding:12px}
  <div>
   <div class="sh"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" stroke="#d9a940" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><path d="M3 17h7l3-7 5 14 4-9 3 2h8"/></svg>Background</div>
   <div class="box">
+   <div style="margin:-6px 0 12px"><svg viewBox="0 0 640 210" width="560" height="184" font-family="Carlito, Calibri, Arial, sans-serif">
+<defs><radialGradient id="wall" cx="50%" cy="50%" r="50%"><stop offset=".72" stop-color="#e8a9a0"/><stop offset="1" stop-color="#c76c60"/></radialGradient><radialGradient id="lum" cx="45%" cy="40%" r="60%"><stop offset="0" stop-color="#d23a35"/><stop offset="1" stop-color="#9e1f1f"/></radialGradient></defs>
+<circle cx="110" cy="78" r="66" fill="url(#wall)" stroke="#8c3b33" stroke-width="2"/>
+<circle cx="110" cy="78" r="43.6" fill="#f6d9d3" stroke="#b5554a" stroke-width="1.5"/>
+<circle cx="110" cy="78" r="43.6" fill="#f2cf5b"/>
+<circle cx="110.0" cy="74.5" r="40.1" fill="url(#lum)"/>
+<text x="110" y="178" text-anchor="middle" font-size="22" font-weight="700" fill="#262626">Childhood</text><text x="110" y="202" text-anchor="middle" font-size="19" fill="#595959">fatty streaks</text>
+<path d="M192 78 h40 m-10 -9 l10 9 l-10 9" stroke="#8c8c8c" stroke-width="3" fill="none"/>
+<circle cx="320" cy="78" r="66" fill="url(#wall)" stroke="#8c3b33" stroke-width="2"/>
+<circle cx="320" cy="78" r="43.6" fill="#f6d9d3" stroke="#b5554a" stroke-width="1.5"/>
+<circle cx="320" cy="78" r="43.6" fill="#f2cf5b"/>
+<circle cx="320.0" cy="64.1" r="29.6" fill="url(#lum)"/>
+<path d="M293.9 102.0 Q320.0 88.9 346.1 102.0" stroke="#fff6d8" stroke-width="2" fill="none" opacity=".8"/>
+<text x="320" y="178" text-anchor="middle" font-size="22" font-weight="700" fill="#262626">Young adult</text><text x="320" y="202" text-anchor="middle" font-size="19" fill="#595959">early plaque</text>
+<path d="M402 78 h40 m-10 -9 l10 9 l-10 9" stroke="#8c8c8c" stroke-width="3" fill="none"/>
+<circle cx="530" cy="78" r="66" fill="url(#wall)" stroke="#8c3b33" stroke-width="2"/>
+<circle cx="530" cy="78" r="43.6" fill="#f6d9d3" stroke="#b5554a" stroke-width="1.5"/>
+<circle cx="530" cy="78" r="43.6" fill="#f2cf5b"/>
+<circle cx="530.0" cy="52.7" r="18.3" fill="url(#lum)"/>
+<path d="M503.9 102.0 Q530.0 88.9 556.1 102.0" stroke="#fff6d8" stroke-width="2" fill="none" opacity=".8"/>
+<text x="530" y="178" text-anchor="middle" font-size="22" font-weight="700" fill="#262626">Middle age</text><text x="530" y="202" text-anchor="middle" font-size="19" fill="#595959">advanced plaque</text>
+</svg></div>
    <ul class="pts">
-    <li><b>Atherosclerosis starts in youth.</b> Childhood risk factors (ages 3–19) predict adult cardiovascular events in 38,589 people followed for 35 years.</li>
-    <li><b>Damage is cumulative.</b> Each 1 mmol/L lower LDL-C sustained from early life gives ~55% lower coronary risk, about 3× the benefit of lowering it later.</li>
-    <li><b>Genes are modifiable risk.</b> High genetic risk with a healthy lifestyle: 46% fewer coronary events.</li>
+    <li><b>Starts in youth:</b> childhood risk factors predict adult CV events (38,589 people, 35 years).</li>
+    <li><b>Cumulative:</b> 1 mmol/L lower LDL-C from early life ≈ 55% less coronary disease.</li>
    </ul>
-   <div class="cite">Jacobs, NEJM 2022 · Ference, JACC 2012 · Khera, NEJM 2016</div>
+   <div class="cite">Schematic arteries. Jacobs, NEJM 2022 · Ference, JACC 2012</div>
   </div>
  </div>
  <div>

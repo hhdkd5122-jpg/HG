@@ -170,3 +170,77 @@ def ornament(c, width=520):
             + leaf(232, 20, 30, 180, c, w=1.6, veins=3) + leaf(288, 20, 30, 0, c, w=1.6, veins=3)
             + f'<circle cx="260" cy="20" r="11" fill="none" stroke="{c}" stroke-width="2"/>'
             f'<circle cx="260" cy="9" r="1.5" fill="{c}"/></svg>')
+
+
+def watercolor_defs():
+    return ('<defs>'
+            '<filter id="wc" x="-20%" y="-20%" width="140%" height="140%">'
+            '<feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="3" seed="7" result="n"/>'
+            '<feDisplacementMap in="SourceGraphic" in2="n" scale="16" xChannelSelector="R" yChannelSelector="G" result="d"/>'
+            '<feGaussianBlur in="d" stdDeviation="1.2"/></filter>'
+            '<radialGradient id="wcFruit" cx="38%" cy="32%" r="75%"><stop offset="0" stop-color="#f3f19a"/>'
+            '<stop offset=".55" stop-color="#c9d34a"/><stop offset="1" stop-color="#7e9a2a"/></radialGradient>'
+            '<radialGradient id="wcSlice" cx="50%" cy="50%" r="60%"><stop offset="0" stop-color="#fbf6c8"/>'
+            '<stop offset=".8" stop-color="#ecdc6a"/><stop offset="1" stop-color="#b9c43a"/></radialGradient>'
+            '<linearGradient id="wcLeaf" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7fb069"/>'
+            '<stop offset="1" stop-color="#3f6e34"/></linearGradient></defs>')
+
+
+def leaf_fill(x, y, length, angle, width=0.36):
+    a = math.radians(angle)
+    ux, uy = math.cos(a), math.sin(a)
+    nx, ny = -uy, ux
+    L, W = length, length * width
+    tip = (x + ux * L, y + uy * L)
+    c1 = (x + ux * L * .35 + nx * W, y + uy * L * .35 + ny * W)
+    c2 = (x + ux * L * .35 - nx * W, y + uy * L * .35 - ny * W)
+    c1b = (x + ux * L * .8 + nx * W * .55, y + uy * L * .8 + ny * W * .55)
+    c2b = (x + ux * L * .8 - nx * W * .55, y + uy * L * .8 - ny * W * .55)
+    return (f'<path d="M{x:.1f} {y:.1f} C{c1[0]:.1f} {c1[1]:.1f} {c1b[0]:.1f} {c1b[1]:.1f} {tip[0]:.1f} {tip[1]:.1f} '
+            f'C{c2b[0]:.1f} {c2b[1]:.1f} {c2[0]:.1f} {c2[1]:.1f} {x:.1f} {y:.1f}Z" fill="url(#wcLeaf)"/>')
+
+
+def branch_header_color(c='#d9a940'):
+    leaves = [(90, 432, 150, -120), (170, 392, 160, 205), (250, 352, 150, -95), (400, 268, 170, 200),
+              (470, 225, 150, -70), (640, 140, 140, -125), (690, 128, 130, 165), (585, 72, 110, -60)]
+    o = ['<svg viewBox="0 0 760 500" width="760" height="500" stroke-linecap="round" stroke-linejoin="round">',
+         watercolor_defs(), '<g filter="url(#wc)" opacity=".82">']
+    for (x, y, L, ang) in leaves:
+        o.append(leaf_fill(x, y, L, ang))
+    o.append('<circle cx="350" cy="300" r="95" fill="url(#wcFruit)"/><circle cx="560" cy="250" r="72" fill="url(#wcFruit)"/>'
+             '<circle cx="150" cy="230" r="78" fill="url(#wcSlice)"/>'
+             '<circle cx="700" cy="60" r="26" fill="#fbf7ea" opacity=".9"/><circle cx="640" cy="330" r="16" fill="#fbf7ea" opacity=".9"/>')
+    o.append('</g>')
+    inner = branch_header(c)
+    inner = inner[inner.index('>') + 1:inner.rindex('</svg>')]
+    o.append(inner)
+    o.append('</svg>')
+    return '\n'.join(o)
+
+
+def artery_strip(width=640):
+    """Three artery cross-sections: fatty streak -> early plaque -> advanced plaque (viewBox 0 0 640 210)."""
+    o = [f'<svg viewBox="0 0 640 210" width="{width}" height="{width * 210 / 640:.0f}" font-family="Carlito, Calibri, Arial, sans-serif">',
+         '<defs><radialGradient id="wall" cx="50%" cy="50%" r="50%"><stop offset=".72" stop-color="#e8a9a0"/>'
+         '<stop offset="1" stop-color="#c76c60"/></radialGradient>'
+         '<radialGradient id="lum" cx="45%" cy="40%" r="60%"><stop offset="0" stop-color="#d23a35"/><stop offset="1" stop-color="#9e1f1f"/></radialGradient></defs>']
+    stages = [('Childhood', 'fatty streaks', 0.08), ('Young adult', 'early plaque', 0.32), ('Middle age', 'advanced plaque', 0.58)]
+    for i, (t, sub, p) in enumerate(stages):
+        cx, cy, R = 110 + i * 210, 78, 66
+        o.append(f'<circle cx="{cx}" cy="{cy}" r="{R}" fill="url(#wall)" stroke="#8c3b33" stroke-width="2"/>')
+        o.append(f'<circle cx="{cx}" cy="{cy}" r="{R * .66:.1f}" fill="#f6d9d3" stroke="#b5554a" stroke-width="1.5"/>')
+        # plaque crescent (yellow lipid) growing into lumen
+        pr = R * .66
+        lr = pr * (1 - p)
+        o.append(f'<circle cx="{cx}" cy="{cy}" r="{pr:.1f}" fill="#f2cf5b"/>')
+        o.append(f'<circle cx="{cx + (pr - lr) * .0:.1f}" cy="{cy - (pr - lr):.1f}" r="{lr:.1f}" fill="url(#lum)"/>')
+        if p > .2:
+            o.append(f'<path d="M{cx - pr * .6:.1f} {cy + pr * .55:.1f} Q{cx:.1f} {cy + pr * .25:.1f} {cx + pr * .6:.1f} {cy + pr * .55:.1f}" '
+                     f'stroke="#fff6d8" stroke-width="2" fill="none" opacity=".8"/>')
+        o.append(f'<text x="{cx}" y="{cy + R + 34}" text-anchor="middle" font-size="22" font-weight="700" fill="#262626">{t}</text>'
+                 f'<text x="{cx}" y="{cy + R + 58}" text-anchor="middle" font-size="19" fill="#595959">{sub}</text>')
+        if i < 2:
+            ax = cx + R + 16
+            o.append(f'<path d="M{ax} {cy} h40 m-10 -9 l10 9 l-10 9" stroke="#8c8c8c" stroke-width="3" fill="none"/>')
+    o.append('</svg>')
+    return '\n'.join(o)
