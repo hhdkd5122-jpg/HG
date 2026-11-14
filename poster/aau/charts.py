@@ -2,8 +2,8 @@
 import math
 
 F = 'font-family="Carlito, Calibri, Arial, sans-serif"'
-BLUE, ORANGE, GRAY, GOLD, GREEN = '#4472C4', '#ED7D31', '#A5A5A5', '#FFC000', '#70AD47'
-DGREEN = '#1d3a1a'
+BLUE, ORANGE, GRAY, GOLD, GREEN = '#3f7a22', '#e89a2c', '#A5A5A5', '#e3c53a', '#8fb836'
+DGREEN = '#2c5419'
 AX, GRID, TXT = '#595959', '#D9D9D9', '#262626'
 ARROW = ('<defs><marker id="{id}" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" '
          'markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10z" fill="#404040"/></marker></defs>')
