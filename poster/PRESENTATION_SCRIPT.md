@@ -1,46 +1,52 @@
 # Before the Statin: 2-minute poster script
 
 **Noor Al Ahmad · College of Pharmacy, Al Ain University**
-An awareness and education presentation. About 260 words, roughly 2 minutes at a calm pace. *Italic lines in brackets are where to point, not what to say.*
+An awareness talk. About 270 words, roughly 2 minutes. *Italic lines in brackets are actions, not words to say.* **Bold** = say it slowly.
 
 ---
 
-### 1. Hook (0:00–0:15)
-*(Point to the title)*
+### 1. The hook (0:00–0:20)
+*(Look at the audience, not the poster. Pause after the question.)*
 
-Good morning. My poster is called **"Before the Statin."**
-Heart disease doesn't start at 40. It starts in childhood, silently, long before anyone thinks about a statin.
+Quick question: **how old do you think your heart is?**
+*(pause)*
+Here's the surprise: the story of a heart attack at 40 often starts **at 14.**
+My poster is called **"Before the Statin"**, because the best time to protect your heart is long before you ever need a pill.
 
-### 2. Why early matters (0:15–0:45)
-*(Point to the graph in section 01)*
+### 2. The silent bucket (0:20–0:50)
+*(Point to the graph)*
 
-This graph shows cholesterol building up over the years, like water filling a bucket.
-When the bucket reaches this red line, heart problems can begin.
-A young person with high genetic risk, the red line, can reach it by about 40.
-If cholesterol is lowered early, the green line, it's reached about **six years later**.
-Large genetic studies support this: lower LDL from early life means about **55% lower** coronary risk per mmol/L.
+Imagine every year of your life drips a little cholesterol into a bucket.
+*(trace the red dashed line)* When it fills to this line, heart problems can begin.
+*(trace the red line)* Someone with "bad cholesterol genes" fills it fast, by around **40.**
+*(trace the green line)* Slow the drip early, and you reach it **six years later.**
+Six extra healthy years, just from starting early. Big genetic studies show lowering LDL from early life cuts coronary risk by about **55%.**
 
-### 3. Know your risk (0:45–1:05)
+### 3. Your genes are a warning, not a sentence (0:50–1:10)
 *(Point to section 02)*
 
-The good news is that risk can be **spotted early**.
-Five simple checks help: family history, a cholesterol test, Lp(a), a genetic risk score, and metabolic signs like waist size, blood pressure and sugar.
-And genes are not destiny: people with high genetic risk who live healthily have about **46% fewer** heart attacks.
+You can't change your DNA, but you can **read it early.**
+Five simple checks, from family history to a cholesterol test, can spot risk in young people.
+And here's my favourite fact: people with high-risk genes who live healthily have **46% fewer heart attacks.**
+**Genes load the gun. Lifestyle pulls the trigger.**
 
-### 4. What about bergamot? (1:05–1:35)
-*(Point to the body diagram in section 03)*
+### 4. The fruit everyone's asking about (1:10–1:40)
+*(Hold up a bergamot or point to the fruit)*
 
-Many people ask about natural options. **Citrus bergamot** is a Mediterranean citrus rich in polyphenols.
-In adult studies, it lowered LDL cholesterol by about **40 mg/dL**, and improved triglycerides, sugar, blood pressure and fatty liver.
-*(Point to section 04)*
-But the public should know the full picture: the evidence is still weak, one trial found no effect, and **it hasn't been tested in young people yet.**
+Meet **Citrus bergamot**, a bitter green citrus from southern Italy.
+*(point to the body diagram)* In adult studies, it lowered LDL by about **40 mg/dL**, and helped sugar, triglycerides, blood pressure and even fatty liver.
+Sounds like magic? *(pause)* **Not yet.**
+The studies were small, one found no effect, and **no one has tested it in young people.** Promising, but not proven.
 
-### 5. Take-home (1:35–2:00)
-*(Point to the green bar at the bottom)*
+### 5. The take-home (1:40–2:00)
+*(Count on your fingers)*
 
-So my message is simple: **know your family history, get your cholesterol checked early, live healthily, and talk to a doctor or pharmacist before starting any supplement.**
-Bergamot is promising, but it doesn't replace medical treatment.
-*(Point to the QR code)* All my sources are in this QR code. Thank you.
+So remember three things:
+**One:** know your family history.
+**Two:** check your cholesterol early, not at 40.
+**Three:** ask a doctor or pharmacist before any supplement.
+Your heart's story is being written **right now.** Start writing a better one.
+*(Point to the QR code)* Every source is in this QR code. Thank you!
 
 ---
 
@@ -50,20 +56,22 @@ Bergamot is promising, but it doesn't replace medical treatment.
 No. Never stop a prescribed medicine on your own. Bergamot is a supplement, not an approved treatment. Talk to your doctor or pharmacist first.
 
 **"Is the graph real data?"**
-It's an example model that shows the idea: the earlier cholesterol is lowered, the later heart disease appears. It's based on large genetic studies.
+It's an example model of a real idea: the earlier cholesterol is lowered, the later heart disease appears. It's based on large genetic studies.
 
-**"Why do you say the evidence is weak?"**
+**"Why do you say it's not proven?"**
 The bergamot studies were small and short, some used mixed products, and all were in adults.
 
 **"Is bergamot safe?"**
 Adult studies reported it was well tolerated, but it hasn't been studied in children or teenagers.
 
 **"When should young people get checked?"**
-Guidelines recommend a cholesterol test in childhood (ages 9–11) and again at 17–21, and earlier if a close family member had heart disease young.
+Guidelines recommend a cholesterol test at ages 9–11 and again at 17–21, and earlier if a close family member had heart disease young.
 
 ---
 
-### Tips
-- Practise with a timer. If you're over 2 minutes, shorten section 4 first.
-- Look at your audience, not the poster. Use your hand to point.
-- Say the bold numbers slowly. Those are what people remember.
+### Tips to grab attention
+- **Open with the question and really pause.** Silence makes people listen.
+- **Bring a real bergamot** (or a photo on your phone). A prop people can see or smell makes you memorable.
+- **Trace the lines on the graph with your finger** as you talk about them.
+- **Count the three take-home points on your fingers.** People remember lists of three.
+- Smile, slow down on the bold numbers, and practise with a timer. If you run long, shorten part 4.
