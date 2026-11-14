@@ -9,7 +9,7 @@
 :root{--g:#1d3a1a;--g2:#2e5a26;--gold:#b9852a;--gold2:#d9a940;--bg:#f7f4ec;--line:#d6d0c2;--txt:#262626;--muted:#595959;--red:#C00000}
 @page{size:2250px 4000px;margin:0}
 *{box-sizing:border-box;margin:0;padding:0}
-html,body{background:var(--bg)}
+html,body{background:var(--bg) url(paper.png) repeat}
 body{width:2250px;height:4000px;overflow:hidden;position:relative;font-family:Carlito,Calibri,Arial,sans-serif;color:var(--txt);font-size:27px;line-height:1.32;-webkit-print-color-adjust:exact;print-color-adjust:exact}
 b{font-weight:700}
 
@@ -17,15 +17,19 @@ b{font-weight:700}
 header{position:relative;height:520px;background:var(--g);color:#fff;padding:46px 60px 0;border-bottom:10px solid var(--gold)}
 header h1{font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:156px;line-height:.9;letter-spacing:.01em}
 header h1 span{color:var(--gold2);display:block}
-header .sub{font-family:Oswald;font-weight:500;font-size:40px;line-height:1.15;margin-top:16px;color:#f1efe6;max-width:1560px}
+header .sub{font-family:Oswald;font-weight:500;font-size:40px;line-height:1.15;margin-top:16px;color:#f1efe6;max-width:1150px}
+header .orn{position:absolute;left:52px;bottom:88px}
 header .auth{position:absolute;left:60px;bottom:34px;font-size:30px;color:#dfe6d8}
 header .auth b{color:#fff;font-size:34px}
+header .branch{position:absolute;right:236px;top:8px}
+header h1,header .sub{position:relative;z-index:1}
+header .auth,header .orn{z-index:1}
 header .logo{position:absolute;right:60px;top:46px;background:#fff;padding:16px 22px;border-radius:6px}
 header .logo img{height:170px;display:block}
 
 /* layout */
 .row{display:grid;gap:40px;padding:0 60px;margin-top:40px}
-.sh{height:58px;background:var(--g);color:#fff;font-family:Oswald;font-weight:600;font-size:33px;letter-spacing:.05em;text-transform:uppercase;display:flex;align-items:center;padding-left:22px;border-left:14px solid var(--gold)}
+.sh{gap:16px;height:58px;background:var(--g);color:#fff;font-family:Oswald;font-weight:600;font-size:33px;letter-spacing:.05em;text-transform:uppercase;display:flex;align-items:center;padding-left:22px;border-left:14px solid var(--gold)}
 .box{background:#fff;border:2px solid var(--line);border-top:0;padding:24px 28px}
 .cite{font-size:20px;color:var(--muted);margin-top:12px;line-height:1.3}
 ul.pts{list-style:none;display:grid;gap:16px}
@@ -33,7 +37,9 @@ ul.pts li{padding-left:26px;position:relative}
 ul.pts li:before{content:"";position:absolute;left:0;top:13px;width:11px;height:11px;background:var(--gold)}
 .dyk{margin-top:18px;border-left:8px solid var(--gold);background:#faf5e7;padding:14px 18px;font-size:24px}
 .dyk .h{font-family:Oswald;font-weight:600;font-size:24px;color:var(--gold);letter-spacing:.06em}
-.hyp{background:var(--g);color:#fff;padding:30px 34px;height:100%}
+.hyp{background:var(--g);color:#fff;padding:30px 34px;height:100%;position:relative;overflow:hidden}
+.hyp .plate{position:absolute;right:-24px;bottom:-34px;opacity:.5}
+.hyp .ornh{margin-top:8px}
 .hyp .h{font-family:Oswald;font-weight:600;font-size:40px;letter-spacing:.04em;border-bottom:3px solid var(--gold2);padding-bottom:12px;margin-bottom:18px}
 .hyp p{font-size:32px;line-height:1.4}
 .hyp p em{font-style:normal;color:var(--gold2);font-weight:700}
@@ -69,9 +75,10 @@ ol.det b{display:block;color:var(--g);font-size:27px}
 .pa.b{border-color:var(--g);background:#eef1ec} .pa.b .h{color:var(--g)}
 
 /* conclusion + footer */
-.concl{margin:40px 60px 0;border:3px solid var(--g);background:#fff;padding:22px 32px;display:grid;grid-template-columns:260px 1fr;gap:28px;align-items:center}
+.concl{position:relative;margin:40px 60px 0;border:3px solid var(--g);background:#fff;padding:22px 250px 22px 32px;display:grid;grid-template-columns:260px 1fr;gap:28px;align-items:center}
 .concl .h{font-family:Oswald;font-weight:600;font-size:40px;color:var(--g);letter-spacing:.04em;border-right:3px solid var(--gold);height:100%;display:flex;align-items:center}
-.concl p{font-size:31px;line-height:1.36}
+.concl p{font-size:29px;line-height:1.34}
+.concl .csprig{position:absolute;right:18px;bottom:8px;opacity:.85}
 footer{position:absolute;left:0;right:0;bottom:0;height:250px;background:var(--g);color:#dfe6d8;padding:30px 60px;display:grid;grid-template-columns:1fr 1fr 520px;gap:50px;align-items:center;border-top:10px solid var(--gold)}
 footer .h{font-family:Oswald;font-weight:600;font-size:24px;letter-spacing:.12em;color:var(--gold2);margin-bottom:8px}
 footer .k{font-size:21px;line-height:1.4}
@@ -86,15 +93,17 @@ footer .qr{background:#fff;padding:12px}
 
 <header>
  <h1>Before the Statin:<span>Citrus Bergamot</span></h1>
- <div class="sub">Can early Citrus bergamot delay statin therapy in young patients with high cholesterol?</div>
+ <div class="sub">Can early bergamot delay statins in young patients with high cholesterol?</div>
+ <div class="orn">{{ORN}}</div>
  <div class="auth"><b>Noor Al Ahmad</b> &nbsp;|&nbsp; Department of Pharmacy, Al Ain University, Al Ain, UAE</div>
+ <div class="branch">{{BRANCH}}</div>
  <div class="logo"><img src="logo_aau.png" alt="Al Ain University"></div>
 </header>
 
 <!-- ROW A -->
 <section class="row" style="grid-template-columns:1fr 1fr 1fr">
  <div>
-  <div class="sh">Background</div>
+  <div class="sh">{{I:pulse}}Background</div>
   <div class="box">
    <ul class="pts">
     <li><b>Atherosclerosis starts in youth.</b> Childhood risk factors (ages 3–19) predict adult cardiovascular events in 38,589 people followed for 35 years.</li>
@@ -105,7 +114,7 @@ footer .qr{background:#fff;padding:12px}
   </div>
  </div>
  <div>
-  <div class="sh">Why Citrus bergamot?</div>
+  <div class="sh">{{I:leaf}}Why Citrus bergamot?</div>
   <div class="box">
    <p><i>Citrus bergamia</i> is a citrus grown mainly in Calabria, Italy, and rich in flavanones. Two of them, <b>brutieridin</b> and <b>melitidin</b>, carry a statin-like side chain and are proposed to inhibit <b>HMG-CoA reductase</b>, the statin target.</p>
    <div class="dyk"><div class="h">DID YOU KNOW?</div>Statins came from nature: compactin was isolated from <i>Penicillium citrinum</i> (Endo, 1976), and lovastatin from <i>Aspergillus terreus</i> became the first FDA-approved statin (1987).</div>
@@ -113,8 +122,9 @@ footer .qr{background:#fff;padding:12px}
  </div>
  <div>
   <div class="hyp">
-   <div class="h">STUDY HYPOTHESIS</div>
+   <div class="h" style="display:flex;align-items:center;gap:14px">{{I:flask}}STUDY HYPOTHESIS</div>
    <p>Starting <em>Citrus bergamot</em> early in young patients with high cholesterol, who do not yet meet statin criteria, will lower LDL-C and linked cardiometabolic risk factors, and <em>delay the need for statin therapy</em> in the long run.</p>
+   <div class="plate">{{PLATE}}</div>
   </div>
  </div>
 </section>
@@ -122,11 +132,11 @@ footer .qr{background:#fff;padding:12px}
 <!-- ROW B -->
 <section class="row" style="grid-template-columns:1fr 1fr">
  <div>
-  <div class="sh">How bergamot may work</div>
+  <div class="sh">{{I:cog}}How bergamot may work</div>
   <div class="box">{{MECH}}<div class="cite">Mechanisms are proposed, mainly from laboratory and small human studies.</div></div>
  </div>
  <div>
-  <div class="sh">Statin vs bergamot</div>
+  <div class="sh">{{I:scale}}Statin vs bergamot</div>
   <div class="box">
    <table class="ot">
     <tr><th style="width:24%"></th><th>Statin</th><th class="b">Citrus bergamot</th></tr>
@@ -144,11 +154,11 @@ footer .qr{background:#fff;padding:12px}
 <!-- ROW C -->
 <section class="row" style="grid-template-columns:1.4fr 1fr">
  <div>
-  <div class="sh">The hypothesis in one graph</div>
+  <div class="sh">{{I:chart}}The hypothesis in one graph</div>
   <div class="box">{{LINE}}<div class="cite">Conceptual model of the cumulative-exposure principle (Ference 2012, 2017). Lines assume constant LDL-C; the bergamot line assumes a 0.8 mmol/L (≈31 mg/dL) reduction from age 16.</div></div>
  </div>
  <div>
-  <div class="sh">Who has been studied?</div>
+  <div class="sh">{{I:people}}Who has been studied?</div>
   <div class="box">
    <div style="display:grid;grid-template-columns:360px 1fr;gap:26px;align-items:center">
     {{DONUT}}
@@ -167,8 +177,8 @@ footer .qr{background:#fff;padding:12px}
 <!-- ROW D -->
 <section class="row" style="grid-template-columns:1fr 1.45fr">
  <div>
-  <div class="sh">Early risk detection</div>
-  <div class="box">
+  <div class="sh">{{I:search}}Early risk detection</div>
+  <div class="box" style="position:relative;height:calc(100% - 58px)">
    <ol class="det">
     <li><span><b>Family history</b>Premature heart disease in a close relative</span></li>
     <li><span><b>Lipid profile</b>LDL-C, triglycerides, HDL-C, apoB</span></li>
@@ -181,10 +191,11 @@ footer .qr{background:#fff;padding:12px}
     <div class="pa b"><div class="h">Guideline care</div>Monogenic FH or very high LDL-C: statin as indicated. Bergamot is not a substitute.</div>
    </div>
    <div class="cite">Universal lipid screening at 9–11 and 17–21 years (NHLBI 2011); Lp(a) once (EAS 2022).</div>
+   <div style="position:absolute;right:20px;bottom:16px;opacity:.6">{{SPRIG2}}</div>
   </div>
  </div>
  <div>
-  <div class="sh">Bergamot effects in adult RCTs</div>
+  <div class="sh">{{I:bars}}Bergamot effects in adult RCTs</div>
   <div class="box">
    <table class="ot">
     <tr><th>Outcome</th><th>Mean difference vs control</th><th>95% CI</th></tr>
@@ -206,14 +217,15 @@ footer .qr{background:#fff;padding:12px}
 <!-- ROW E -->
 <section class="row" style="grid-template-columns:1fr">
  <div>
-  <div class="sh">How to test the hypothesis</div>
+  <div class="sh">{{I:steps}}How to test the hypothesis</div>
   <div class="box">{{PROC}}</div>
  </div>
 </section>
 
 <div class="concl">
  <div class="h">CONCLUSION</div>
- <p>Atherosclerosis begins in youth and LDL-C damage accumulates over time. <b>Citrus bergamot</b> improves several cardiometabolic risk factors in adults, which makes it a strong candidate to test as an <b>early step that could delay statin therapy</b> in young patients with high cholesterol.</p>
+ <div class="csprig">{{SPRIG}}</div>
+ <p>Atherosclerosis begins in youth and LDL-C damage accumulates over time. <b>Citrus bergamot</b> improves several cardiometabolic risk factors in adults, making it a strong candidate to test as an <b>early step to delay statin therapy</b> in young patients.</p>
 </div>
 
 <footer>
