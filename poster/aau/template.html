@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Before the Statin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --g:#1d3a1a; --g2:#2e5a26; --g3:#4f7d3a; --gold:#b9852a; --gold2:#d9a940; --sand:#efe6d2; --paper:#f4eedf;
+  --parch:#f6ead0; --ink:#1c2418; --muted:#5d6553; --red:#b5483a; --lime:#a9be2c;
+}
+@page{size:2250px 4000px;margin:0}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--paper)}
+body{width:2250px;height:4000px;overflow:hidden;position:relative;font-family:Inter,sans-serif;color:var(--ink);font-size:24px;line-height:1.38;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body:before{content:"";position:absolute;inset:0;background:
+  radial-gradient(1200px 900px at 0% 40%,rgba(185,133,42,.07),transparent 70%),
+  radial-gradient(1100px 900px at 100% 70%,rgba(46,90,38,.07),transparent 70%),
+  repeating-linear-gradient(45deg,rgba(0,0,0,.012) 0 2px,transparent 2px 6px);pointer-events:none}
+.os{font-family:Oswald,sans-serif}
+b{font-weight:700}
+
+/* ---------- HERO ---------- */
+.hero{position:relative;height:1300px}
+.hero .scene{overflow:hidden}
+.hero .scene{position:absolute;inset:0}
+.hero .veil{position:absolute;inset:0;background:linear-gradient(90deg,rgba(244,238,223,.92) 0%,rgba(244,238,223,.78) 34%,rgba(244,238,223,.15) 62%,rgba(244,238,223,0) 100%),linear-gradient(180deg,rgba(244,238,223,0) 70%,var(--paper) 100%)}
+.mol{position:absolute;fill:none;stroke:#fff;stroke-width:4;stroke-linejoin:round;stroke-linecap:round;opacity:.9}
+.mol text{fill:#fff;stroke:none;font-family:Inter;font-size:30px;font-weight:500}
+.title{position:absolute;left:70px;top:40px;border-left:10px solid var(--gold);padding-left:34px}
+.title h1{font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:214px;line-height:.86;letter-spacing:.01em;color:var(--g)}
+.title h1 span{color:var(--gold);display:block}
+.title h2{font-family:Oswald;font-weight:600;font-size:64px;line-height:1.08;color:var(--g);margin-top:26px;letter-spacing:.01em;text-transform:uppercase}
+.title h2 .rule{display:inline-flex;align-items:center;gap:16px;vertical-align:middle}
+.title h2 .rule i{display:inline-block;width:300px;height:3px;background:var(--g)}
+.authors{position:absolute;left:104px;top:690px;display:flex;gap:34px;align-items:center}
+.authors .who{font-family:Oswald;font-weight:500;font-size:40px;color:var(--g);line-height:1.2}
+.authors .sep{width:3px;height:110px;background:var(--g);opacity:.5}
+.authors .aff{font-size:25px;line-height:1.35;color:#2b3326}
+.authors .aff b{font-size:27px}
+.logo-slot{position:absolute;right:56px;top:40px;display:flex;flex-direction:column;align-items:center;gap:6px}
+.logo-slot img{height:170px;background:rgba(255,255,255,.88);border-radius:18px;padding:10px 14px;box-shadow:0 10px 24px -14px rgba(0,0,0,.4)}
+.logo-slot .t{font-family:Oswald;font-weight:600;font-size:24px;color:var(--g);letter-spacing:.06em;background:rgba(255,255,255,.75);padding:6px 14px;border-radius:10px}
+
+/* why box (left) */
+.why{position:absolute;left:56px;top:840px;width:690px;background:rgba(244,238,223,.93);border:3px solid var(--g3);border-radius:28px;padding:84px 28px 22px;box-shadow:0 20px 40px -26px rgba(0,0,0,.5)}
+.tab{position:absolute;left:-6px;top:-6px;height:84px;display:flex;align-items:center;gap:18px;padding:0 70px 0 10px;background:var(--g);color:#fff;font-family:Oswald;font-weight:600;font-size:40px;border-radius:44px 0 60px 44px;clip-path:polygon(0 0,92% 0,100% 100%,0 100%)}
+.tab .ic{width:68px;height:68px;border-radius:50%;background:#fff;display:grid;place-items:center}
+.wrow{display:grid;grid-template-columns:96px 1fr;gap:20px;align-items:center;padding:12px 0;border-top:2px solid rgba(46,90,38,.18);font-size:23px;line-height:1.3}
+.wrow:first-of-type{border-top:0}
+.wrow b{color:var(--g)}
+.hex{width:92px;height:100px;clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%);background:var(--gold);display:grid;place-items:center}
+.hex>div{width:82px;height:90px;clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%);background:var(--g);display:grid;place-items:center}
+
+/* parchment (middle) */
+.parch{position:absolute;background:var(--parch);border:4px solid var(--gold2);border-radius:18px;box-shadow:0 18px 36px -20px rgba(80,50,0,.55),inset 0 0 40px rgba(185,133,42,.18);padding:26px 30px}
+.parch h3{font-family:Oswald;font-weight:700;font-size:50px;line-height:1.02;color:var(--g);text-transform:uppercase}
+.parch p{font-size:24px;line-height:1.36;color:#2a2a1e;margin-top:14px}
+.parch p i{font-family:'Cormorant Garamond';font-size:28px;font-weight:600}
+
+/* hypothesis (right) */
+.hyp{position:absolute;right:56px;top:400px;width:650px;background:var(--g);color:#eef2e6;border-radius:26px;padding:34px 40px 30px;box-shadow:0 24px 50px -24px rgba(0,0,0,.6);outline:3px solid rgba(217,169,64,.7);outline-offset:-14px}
+.hyp h3{font-family:Oswald;font-weight:600;font-size:52px;color:#fff;display:flex;align-items:center;gap:14px;letter-spacing:.02em}
+.hyp p{font-size:26px;line-height:1.45;margin-top:18px}
+.hyp p em{font-style:normal;color:var(--gold2);font-weight:700}
+.hyp .orn{display:flex;justify-content:center;margin-top:16px}
+
+/* ---------- RIBBONS ---------- */
+.ribbon{position:relative;display:flex;justify-content:center;align-items:center;height:66px;margin:0 auto;color:#fff;font-family:Oswald;font-weight:500;font-size:40px;letter-spacing:.05em;text-transform:uppercase}
+.ribbon:before{content:"";position:absolute;inset:0;background:var(--g);clip-path:polygon(3% 8%,6% 0,94% 4%,97% 0,100% 22%,98% 50%,100% 80%,97% 100%,60% 96%,8% 100%,2% 94%,0 60%,2% 40%,0 14%)}
+.ribbon:after{content:"";position:absolute;inset:6px -40px;background:repeating-linear-gradient(90deg,rgba(29,58,26,.55) 0 3px,transparent 3px 9px);clip-path:polygon(0 30%,4% 20%,4% 80%,0 70%,100% 70%,96% 80%,96% 20%,100% 30%);z-index:-1;opacity:.6}
+.ribbon span{position:relative}
+section{position:relative}
+
+/* ---------- MEET ---------- */
+.tiles{display:grid;grid-template-columns:repeat(6,1fr);gap:20px;padding:26px 50px 0}
+.tile{text-align:center}
+.tile .im{height:232px;border-radius:6px;overflow:hidden;box-shadow:0 14px 28px -18px rgba(0,0,0,.6);display:grid;place-items:center}
+.tile .cp{font-family:'Cormorant Garamond';font-style:italic;font-weight:600;font-size:28px;margin-top:10px;color:#2a2a1e}
+
+/* ---------- ROWS ---------- */
+.row2{display:grid;gap:34px;padding:0 50px}
+.card{background:#fffdf7;border-radius:22px;box-shadow:0 1px 0 rgba(0,0,0,.04),0 18px 36px -28px rgba(0,0,0,.5);padding:24px 28px;position:relative}
+.ch{display:flex;align-items:center;gap:14px}
+.ch .ci{width:64px;height:64px;border-radius:50%;background:var(--g);display:grid;place-items:center;flex:none;box-shadow:0 0 0 4px #fff,0 0 0 7px var(--g3)}
+.ch h4{font-family:Oswald;font-weight:600;font-size:34px;line-height:1;color:var(--g);text-transform:uppercase}
+.ch small{display:block;font-family:Inter;font-weight:500;font-size:19px;color:var(--muted);text-transform:none;margin-top:6px}
+.note{display:grid;grid-template-columns:58px 1fr;gap:14px;align-items:center;background:#f3efe3;border:2px solid #e2dac4;border-radius:16px;padding:12px 16px;font-family:'Cormorant Garamond';font-size:24px;font-weight:500;line-height:1.25;color:#2a2a1e}
+.note .ni{width:58px;height:58px;border-radius:14px;background:#fff;display:grid;place-items:center;border:2px solid #e2dac4}
+.note b{color:var(--g2)}
+
+/* risk grid */
+.rgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.rk{background:#fffdf7;border-radius:20px;padding:20px 22px;box-shadow:0 18px 36px -28px rgba(0,0,0,.5);border-top:7px solid var(--g3)}
+.rk .big{font-family:'Bebas Neue';font-size:84px;line-height:.9;color:var(--g);margin-top:12px}
+.rk .big small{font-family:Oswald;font-size:26px;font-weight:500;color:var(--muted);margin-left:6px}
+.rk .s{font-size:19px;color:var(--muted);line-height:1.3;margin-top:6px}
+
+/* detect list */
+.dl{display:grid;gap:6px;margin-top:12px}
+.di{display:grid;grid-template-columns:66px 1fr;gap:16px;align-items:center;font-size:21px;line-height:1.25}
+.di b{color:var(--g);font-family:Oswald;font-weight:600;font-size:25px;display:block;line-height:1.1}
+.paths{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:18px}
+.pa{border-radius:18px;padding:16px 18px;font-size:20px;line-height:1.3}
+.pa h5{font-family:Oswald;font-weight:600;font-size:27px;line-height:1.05;margin:6px 0}
+.pa .pl{font-family:Oswald;font-weight:500;font-size:16px;letter-spacing:.14em;text-transform:uppercase}
+.pa.a{background:#eef3d6;border:3px solid var(--lime)} .pa.a .pl{color:#6b7d10} .pa.a h5{color:var(--g)}
+.pa.b{background:var(--g);color:#dfe8d8} .pa.b .pl{color:var(--gold2)} .pa.b h5{color:#fff}
+
+/* donut legend */
+.leg{display:grid;gap:14px}
+.lg{display:grid;grid-template-columns:62px 130px 1fr;align-items:center;gap:14px;font-size:24px}
+.lg .dot{width:58px;height:58px;border-radius:50%;display:grid;place-items:center;color:#fff}
+.lg .pc{font-family:Oswald;font-weight:600;font-size:46px;line-height:1;border-right:3px solid rgba(0,0,0,.15)}
+.lg .nm{line-height:1.2}
+.lg .nm small{display:block;color:var(--muted);font-size:17px}
+
+/* flow */
+.flow{display:flex;align-items:flex-start;justify-content:space-between;padding:22px 70px 0}
+.fs{width:220px;text-align:center}
+.fs .fi{width:124px;height:124px;margin:0 auto;border-radius:50%;background:#fffdf7;display:grid;place-items:center;box-shadow:0 14px 26px -16px rgba(0,0,0,.5);border:4px solid #fff;outline:3px solid var(--g3)}
+.fs .ft{font-family:Oswald;font-weight:600;font-size:26px;color:var(--g);margin-top:12px;line-height:1.05;text-transform:uppercase}
+.fs .fd{font-family:'Cormorant Garamond';font-style:italic;font-weight:600;font-size:22px;line-height:1.15;color:#2a2a1e;margin-top:6px}
+.fa{font-size:56px;color:var(--g);margin-top:28px;font-weight:300}
+
+/* conclusion */
+.concl{font-family:'Cormorant Garamond';font-weight:500;font-size:40px;line-height:1.28;text-align:center;padding:16px 160px 0;color:#1c2418}
+.concl b{font-weight:600;color:var(--g)}
+.foot{position:absolute;left:0;right:0;bottom:0;height:270px;background:linear-gradient(180deg,rgba(244,238,223,0),rgba(233,222,196,.9))}
+.qr{position:absolute;right:56px;bottom:40px;background:#fff;padding:14px;border-radius:16px;box-shadow:0 10px 24px -14px rgba(0,0,0,.5)}
+.qrl{position:absolute;right:300px;bottom:70px;text-align:right;font-family:Oswald;color:var(--g)}
+.qrl b{display:block;font-weight:600;font-size:38px;line-height:1.05}
+.qrl span{font-family:Inter;font-size:19px;color:var(--muted)}
+.safety{position:absolute;left:360px;right:720px;bottom:56px;text-align:center;font-family:'Cormorant Garamond';font-size:27px;line-height:1.3;color:#2a2a1e}
+.safety b{font-family:Inter;font-weight:700;font-size:21px;color:var(--red);letter-spacing:.06em}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute">
+ <defs>
+  <radialGradient id="peel" cx="36%" cy="30%" r="78%"><stop offset="0" stop-color="#f4f7a0"/><stop offset=".45" stop-color="#cfdd3a"/><stop offset="1" stop-color="#8fae17"/></radialGradient>
+  <radialGradient id="flesh" cx="50%" cy="50%" r="55%"><stop offset="0" stop-color="#fffbe0"/><stop offset=".7" stop-color="#f7ec8e"/><stop offset="1" stop-color="#e6d653"/></radialGradient>
+  <linearGradient id="leafg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5aa457"/><stop offset="1" stop-color="#1d4a1f"/></linearGradient>
+  <filter id="sh" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#000" flood-opacity=".25"/></filter>
+  <filter id="blur6"><feGaussianBlur stdDeviation="6"/></filter>
+  <filter id="blur2"><feGaussianBlur stdDeviation="2"/></filter>
+  <g id="fruit">
+   <circle r="100" fill="url(#peel)"/>
+   <g fill="#7f9a12" opacity=".28"><circle cx="-40" cy="-20" r="3"/><circle cx="-10" cy="-50" r="3"/><circle cx="30" cy="-30" r="3"/><circle cx="55" cy="10" r="3"/><circle cx="20" cy="40" r="3"/><circle cx="-30" cy="30" r="3"/><circle cx="-60" cy="10" r="3"/><circle cx="60" cy="-45" r="3"/><circle cx="-20" cy="70" r="3"/><circle cx="40" cy="70" r="3"/><circle cx="-70" cy="-40" r="3"/><circle cx="75" cy="40" r="3"/></g>
+   <ellipse cx="-38" cy="-46" rx="30" ry="18" fill="#fff" opacity=".45" transform="rotate(-30 -38 -46)"/>
+   <circle cx="0" cy="-98" r="9" fill="#6d8a12"/>
+   <path d="M0 -100 C 10 -140, 40 -150, 60 -146" stroke="#3b5c18" stroke-width="7" fill="none" stroke-linecap="round"/>
+   <path d="M40 -150 C 90 -200, 160 -170, 170 -150 C 120 -120, 70 -120, 40 -150 Z" fill="url(#leafg)"/>
+  </g>
+  <g id="slice">
+   <circle r="100" fill="#a9c41f"/><circle r="91" fill="#f8f3c8"/><circle r="84" fill="url(#flesh)"/>
+   <g stroke="#fffbe8" stroke-width="5"><path d="M0 0 L0 -84"/><path d="M0 0 L59 -59"/><path d="M0 0 L84 0"/><path d="M0 0 L59 59"/><path d="M0 0 L0 84"/><path d="M0 0 L-59 59"/><path d="M0 0 L-84 0"/><path d="M0 0 L-59 -59"/></g>
+   <circle r="12" fill="#fffbe8"/>
+  </g>
+  <g id="leaf"><path d="M0 0 C 30 -40, 90 -40, 120 0 C 90 40, 30 40, 0 0 Z" fill="url(#leafg)"/><path d="M0 0 H116" stroke="#9fd39a" stroke-width="2.5" opacity=".7"/></g>
+  <g id="tree">
+   <path d="M-8 0 L-6 -120 L6 -120 L8 0 Z" fill="#5a4630"/>
+   <circle cx="0" cy="-190" r="110" fill="#2f5a25"/><circle cx="-70" cy="-150" r="80" fill="#386a2b"/><circle cx="70" cy="-150" r="80" fill="#2a5221"/><circle cx="0" cy="-250" r="80" fill="#3f7530"/>
+   <g fill="#d6dc4a"><circle cx="-40" cy="-170" r="14"/><circle cx="30" cy="-210" r="14"/><circle cx="70" cy="-140" r="13"/><circle cx="-80" cy="-120" r="12"/><circle cx="10" cy="-130" r="13"/><circle cx="-20" cy="-250" r="12"/><circle cx="60" cy="-260" r="11"/></g>
+  </g>
+ </defs>
+</svg>
+
+<!-- =============== HERO =============== -->
+<section class="hero">
+ <svg class="scene" viewBox="0 0 2250 1230" preserveAspectRatio="xMidYMid slice">
+  <defs>
+   <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9ec3d6"/><stop offset=".55" stop-color="#dfe6dc"/><stop offset="1" stop-color="#efe3c6"/></linearGradient>
+   <linearGradient id="hill1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8aa37a"/><stop offset="1" stop-color="#b9b98d"/></linearGradient>
+   <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c9b88a"/><stop offset="1" stop-color="#e8dcc0"/></linearGradient>
+   <radialGradient id="sun" cx="78%" cy="18%" r="30%"><stop offset="0" stop-color="#fff7d6" stop-opacity=".95"/><stop offset="1" stop-color="#fff7d6" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="2250" height="1230" fill="url(#sky)"/>
+  <rect width="2250" height="1230" fill="url(#sun)"/>
+  <path d="M0 640 C 300 560, 600 600, 900 560 C 1250 510, 1600 590, 2250 520 V1230 H0 Z" fill="url(#hill1)" opacity=".75" filter="url(#blur2)"/>
+  <path d="M0 760 C 400 700, 900 740, 1400 700 C 1800 670, 2050 700, 2250 680 V1230 H0 Z" fill="#9aa86f" opacity=".7"/>
+  <!-- distant trees -->
+  <g opacity=".55" filter="url(#blur2)">
+   <use href="#tree" transform="translate(1000 720) scale(.35)"/><use href="#tree" transform="translate(1110 715) scale(.33)"/><use href="#tree" transform="translate(1220 712) scale(.35)"/><use href="#tree" transform="translate(1330 708) scale(.33)"/><use href="#tree" transform="translate(1440 705) scale(.35)"/><use href="#tree" transform="translate(1550 700) scale(.33)"/><use href="#tree" transform="translate(1660 698) scale(.35)"/><use href="#tree" transform="translate(1770 696) scale(.33)"/><use href="#tree" transform="translate(1880 694) scale(.35)"/><use href="#tree" transform="translate(1990 692) scale(.33)"/><use href="#tree" transform="translate(2100 690) scale(.35)"/><use href="#tree" transform="translate(2210 688) scale(.33)"/>
+  </g>
+  <path d="M0 860 C 600 820, 1400 840, 2250 800 V1230 H0 Z" fill="url(#ground)"/>
+  <g opacity=".85">
+   <use href="#tree" transform="translate(1250 880) scale(.62)"/><use href="#tree" transform="translate(1480 870) scale(.6)"/><use href="#tree" transform="translate(1710 862) scale(.62)"/><use href="#tree" transform="translate(1940 856) scale(.6)"/><use href="#tree" transform="translate(2170 850) scale(.62)"/>
+  </g>
+  <!-- near branch with fruit -->
+  <g transform="translate(1560 860)">
+   <path d="M-260 300 C -120 200, 40 160, 300 60" stroke="#5a4630" stroke-width="18" fill="none" stroke-linecap="round"/>
+   <use href="#leaf" transform="translate(-120 205) rotate(-50) scale(1.4)"/><use href="#leaf" transform="translate(0 150) rotate(-110) scale(1.3)"/><use href="#leaf" transform="translate(120 115) rotate(-30) scale(1.4)"/><use href="#leaf" transform="translate(220 80) rotate(-120) scale(1.2)"/>
+   <g transform="translate(-30 250) scale(1.05)" filter="url(#sh)"><use href="#fruit"/></g>
+   <g transform="translate(190 200) scale(.85)" filter="url(#sh)"><use href="#fruit"/></g>
+  </g>
+ </svg>
+ <div class="veil"></div>
+
+ <!-- molecules -->
+ <svg class="mol" style="left:1390px;top:70px" width="500" height="320" viewBox="-170 -170 600 380">{{MOL1}}</svg>
+ <svg class="mol" style="left:1000px;top:560px;opacity:.7" width="460" height="200" viewBox="-90 -110 460 200">
+  <path d="M0 0 L48 -28 L96 0 L144 -28 L192 0"/>
+  <text x="-80" y="10">HO</text><path d="M-12 0 H0"/>
+  <path d="M-4 0 V50 M4 0 V50"/><text x="-10" y="80">O</text>
+  <path d="M96 0 V48"/><text x="76" y="78">OH</text>
+  <path d="M96 0 L120 -60" opacity="0"/>
+  <path d="M188 0 V50 M196 0 V50"/><text x="182" y="80">O</text>
+  <path d="M192 0 L240 -28"/><text x="246" y="-20">S-CoA</text>
+ </svg>
+ 
+ <div class="title">
+  <h1>Before the Statin:<span>Citrus Bergamot</span></h1>
+  <h2>An early, natural step<br>to protect young hearts <span class="rule"><i></i><svg width="140" height="60" viewBox="0 0 140 60"><use href="#leaf" transform="translate(10 40) rotate(-25) scale(.5)"/><use href="#leaf" transform="translate(56 34) rotate(-45) scale(.55)"/><use href="#leaf" transform="translate(70 40) rotate(10) scale(.45)"/></svg></span></h2>
+ </div>
+
+ <div class="authors">
+  <div class="who">Noor Al Ahmad</div>
+  <div class="sep"></div>
+  <div class="aff"><b>Department of Pharmacy</b><br>Al Ain University<br>Abu Dhabi, UAE</div>
+  <svg width="170" height="110" viewBox="0 0 170 110" style="margin-left:18px;filter:drop-shadow(0 8px 10px rgba(0,0,0,.3))">
+   <path d="M6 4 V108" stroke="#7a6a52" stroke-width="5" stroke-linecap="round"/>
+   <g transform="translate(9 6) skewY(4)">
+    <rect width="150" height="84" fill="#fff"/><rect width="150" height="28" fill="#00732f"/><rect y="56" width="150" height="28" fill="#000"/><rect width="40" height="84" fill="#ff0000"/>
+   </g>
+  </svg>
+ </div>
+
+ <div class="logo-slot"><img src="logo_aau.png" alt="Al Ain University"></div>
+
+ <div class="why">
+  <div class="tab"><span class="ic"><svg width="44" height="44" viewBox="0 0 44 44"><path d="M22 40s-16-9-16-21a8.5 8.5 0 0 1 16-4 8.5 8.5 0 0 1 16 4c0 12-16 21-16 21z" fill="#1d3a1a"/><path d="M9 22h7l3-6 5 11 3-5h8" stroke="#fff" stroke-width="2.5" fill="none"/></svg></span>WHY START EARLY?</div>
+  <div class="wrow"><div class="hex"><div><svg width="48" height="48" viewBox="0 0 48 48"><path d="M10 38 V20 h8 v18 M22 38 V12 h8 v26 M34 38 V6 h8 v32" fill="#d9a940"/></svg></div></div><div><b>Damage adds up:</b> LDL-C harms arteries <b>every year</b> it stays high.</div></div>
+  <div class="wrow"><div class="hex"><div><svg width="48" height="48" viewBox="0 0 48 48"><path d="M16 4c0 14 16 14 16 20S16 30 16 44M32 4c0 14-16 14-16 20s16 6 16 20" stroke="#d9a940" stroke-width="4" fill="none"/><path d="M18 12h12M18 36h12" stroke="#fff" stroke-width="3"/></svg></div></div><div><b>Genes warn early:</b> family history, Lp(a) and genetic scores flag risk <b>decades before symptoms</b>.</div></div>
+  <div class="wrow"><div class="hex"><div><svg width="48" height="48" viewBox="0 0 48 48"><path d="M24 4 L42 12 V24 C42 35 33 42 24 45 C15 42 6 35 6 24 V12Z" fill="none" stroke="#d9a940" stroke-width="4"/><path d="M16 24l6 6 11-12" stroke="#fff" stroke-width="4" fill="none"/></svg></div></div><div><b>Early wins most:</b> lower LDL from early life = <b>~55% less coronary disease</b> per mmol/L.</div></div>
+ </div>
+
+ <div class="parch" style="left:790px;top:860px;width:600px">
+  <h3>Why Citrus Bergamot?</h3>
+  <p><i>Citrus bergamia</i> is a bitter citrus from Calabria, Italy, rich in flavanones. Two of them, <b>brutieridin</b> and <b>melitidin</b>, carry a statin-like side chain and may act on <b>HMG-CoA reductase</b>, the same enzyme statins block.</p>
+ </div>
+
+ <div class="hyp">
+  <h3>STUDY HYPOTHESIS <svg width="54" height="54" viewBox="0 0 54 54"><use href="#leaf" transform="translate(6 40) rotate(-50) scale(.32)"/><use href="#leaf" transform="translate(20 46) rotate(-80) scale(.3)"/><circle cx="38" cy="36" r="12" fill="url(#peel)"/></svg></h3>
+  <p>Starting <em>Citrus bergamot</em> early in young patients with high cholesterol, who do not yet meet statin criteria, will lower LDL-C and linked cardiometabolic risk factors, and <em>delay the need for statin therapy</em> in the long run.</p>
+  <div class="orn"><svg width="200" height="40" viewBox="0 0 200 40"><path d="M10 20 H80 M120 20 H190" stroke="#d9a940" stroke-width="2"/><use href="#leaf" transform="translate(84 26) rotate(-40) scale(.22)"/><use href="#leaf" transform="translate(96 30) rotate(-90) scale(.22)"/><use href="#leaf" transform="translate(100 26) rotate(-140) scale(.22)"/></svg></div>
+ </div>
+
+ <div class="parch" style="right:56px;top:900px;width:560px;padding:20px 26px;display:grid;grid-template-columns:96px 1fr;gap:18px;align-items:start">
+  <svg width="96" height="110" viewBox="0 0 96 110"><path d="M20 10 H76 V40 C76 60 62 70 48 70 C34 70 20 60 20 40Z" fill="#d9a940"/><path d="M20 18 H6 C6 40 16 46 24 46 M76 18 H90 C90 40 80 46 72 46" stroke="#b9852a" stroke-width="5" fill="none"/><rect x="40" y="70" width="16" height="18" fill="#b9852a"/><rect x="26" y="88" width="44" height="12" rx="3" fill="#8a6216"/></svg>
+  <div><div style="font-family:Oswald;font-weight:500;font-size:20px;letter-spacing:.08em;color:var(--gold)">DID YOU KNOW?</div>
+  <h3 style="font-size:38px;margin-top:2px">Statins came from nature</h3>
+  <p style="font-size:20px;margin-top:8px">The first statin, <b>compactin</b>, was isolated from the fungus <i style="font-size:23px">Penicillium citrinum</i> by Akira Endo in 1976. <b>Lovastatin</b>, from <i style="font-size:23px">Aspergillus terreus</i>, became the first FDA-approved statin in 1987.</p></div>
+ </div>
+</section>
+
+<!-- =============== MEET BERGAMOT =============== -->
+<section style="margin-top:20px">
+ <div class="ribbon" style="width:1300px"><span>Meet Citrus bergamot</span></div>
+ <div class="tiles">
+  <div class="tile"><div class="im" style="background:linear-gradient(160deg,#a8c9a0,#2f5a25)"><svg width="232" height="232" viewBox="-150 -170 300 300"><use href="#leaf" transform="translate(-130 -60) rotate(-20) scale(1)"/><use href="#leaf" transform="translate(20 -100) rotate(30) scale(.9)"/><g filter="url(#sh)" transform="translate(0 10) scale(1.05)"><use href="#fruit"/></g></svg></div><div class="cp">Citrus bergamia Risso</div></div>
+  <div class="tile"><div class="im" style="background:linear-gradient(160deg,#f7f1d4,#e2d48a)"><svg width="232" height="232" viewBox="-150 -150 300 300"><g filter="url(#sh)" transform="scale(1.25)"><use href="#slice"/></g></svg></div><div class="cp">Fruit cross-section</div></div>
+  <div class="tile"><div class="im" style="background:linear-gradient(180deg,#a9cde0,#e8e0c6 60%,#c9b88a)"><svg width="232" height="232" viewBox="0 0 300 300"><path d="M0 200 C 80 170, 200 190, 300 160 V300 H0Z" fill="#9aa86f"/><use href="#tree" transform="translate(70 250) scale(.55)"/><use href="#tree" transform="translate(170 245) scale(.6)"/><use href="#tree" transform="translate(265 240) scale(.55)"/></svg></div><div class="cp">Groves of Calabria, Italy</div></div>
+  <div class="tile"><div class="im" style="background:linear-gradient(160deg,#2e5a26,#14290f)"><svg width="232" height="232" viewBox="-150 -140 360 300" fill="none" stroke="#e8f0c8" stroke-width="4" stroke-linejoin="round"><g style="font-family:Inter;font-size:22px">{{MOL1W}}</g></svg></div><div class="cp">Flavanone core (naringenin)</div></div>
+  <div class="tile"><div class="im" style="background:linear-gradient(160deg,#fbf6e6,#e9dcb4)"><svg width="232" height="232" viewBox="0 0 300 300"><g filter="url(#sh)"><rect x="96" y="70" width="108" height="170" rx="22" fill="#fff" stroke="#c9b88a" stroke-width="4"/><rect x="110" y="44" width="80" height="34" rx="8" fill="#1d3a1a"/><rect x="108" y="120" width="84" height="70" rx="8" fill="#e3ef9a"/><circle cx="150" cy="155" r="20" fill="url(#peel)"/></g><g transform="translate(60 240) rotate(-30)" filter="url(#sh)"><rect x="-30" y="-13" width="60" height="26" rx="13" fill="#b9d02a"/><rect x="0" y="-13" width="30" height="26" rx="13" fill="#f7f3d8"/></g><g transform="translate(240 250) rotate(20)" filter="url(#sh)"><rect x="-30" y="-13" width="60" height="26" rx="13" fill="#b9d02a"/><rect x="0" y="-13" width="30" height="26" rx="13" fill="#f7f3d8"/></g></svg></div><div class="cp">BPF capsules</div></div>
+  <div class="tile"><div class="im" style="background:linear-gradient(160deg,#fff6d8,#e8c873)"><svg width="232" height="232" viewBox="0 0 300 300"><g filter="url(#sh)"><path d="M100 90 H200 L188 250 Q186 262 174 262 H126 Q114 262 112 250 Z" fill="#fff" fill-opacity=".55" stroke="#fff" stroke-width="4"/><path d="M106 140 H194 L188 250 Q186 262 174 262 H126 Q114 262 112 250 Z" fill="#e7da55" opacity=".9"/></g><g transform="translate(205 95) scale(.5)" filter="url(#sh)"><use href="#slice"/></g><use href="#leaf" transform="translate(40 230) rotate(-40) scale(.8)"/></svg></div><div class="cp">Juice &amp; albedo extract</div></div>
+ </div>
+</section>
+
+<!-- =============== GRAPH + DONUT =============== -->
+<section class="row2" style="grid-template-columns:1.45fr 1fr;margin-top:24px">
+ <div>
+  <div class="ribbon" style="width:100%"><span>The hypothesis in one graph</span></div>
+  <div class="card" style="margin-top:20px;padding:20px 26px 16px">
+   <div class="ch"><span class="ci"><svg width="34" height="34" viewBox="0 0 34 34"><path d="M4 30 L12 20 L18 24 L30 6" stroke="#d9a940" stroke-width="4" fill="none" stroke-linecap="round"/></svg></span><h4>Cumulative LDL-C exposure<small>Illustrative model: the earlier the slope falls, the later the threshold is reached</small></h4></div>
+   <svg viewBox="0 0 1500 520" width="100%" style="display:block;margin-top:10px">
+    <defs><marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10z" fill="#1d3a1a"/></marker>
+    <linearGradient id="areaR" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b5483a" stop-opacity=".2"/><stop offset="1" stop-color="#b5483a" stop-opacity="0"/></linearGradient></defs>
+    <g font-family="Inter" font-size="20" fill="#5d6553" font-weight="600">
+     <path d="M90 440 H1450" stroke="#cfc6b0" stroke-width="2"/>
+     <g text-anchor="middle"><text x="90" y="474">0</text><text x="317" y="474">10</text><text x="543" y="474">20</text><text x="770" y="474">30</text><text x="997" y="474">40</text><text x="1223" y="474">50</text><text x="1450" y="474">60 y</text></g>
+     <text x="78" y="446" text-anchor="end">0</text><text x="78" y="246" text-anchor="end">100</text><text x="78" y="46" text-anchor="end">200</text>
+     <g stroke="#ece5d3" stroke-width="2"><path d="M90 240 H1450"/><path d="M90 40 H1450"/></g>
+    </g>
+    <rect x="410" y="40" width="110" height="400" fill="#a9be2c" opacity=".22"/>
+    <text x="465" y="506" text-anchor="middle" font-family="Oswald" font-weight="600" font-size="22" fill="#4f7d3a">YOUNG PATIENTS</text>
+    <path d="M90 120 H1450" stroke="#b5483a" stroke-width="3" stroke-dasharray="12 8"/>
+    <text x="100" y="106" font-family="Inter" font-weight="700" font-size="21" fill="#b5483a">Threshold where coronary events start to appear (~160 mmol-years)</text>
+    <path d="M90 440 L1450 40" stroke="#a7a48f" stroke-width="5"/>
+    <path d="M90 440 L997 120 L1223 40" stroke="#b5483a" stroke-width="7" fill="none" stroke-linecap="round"/>
+    <path d="M90 440 L997 120 L997 440 Z" fill="url(#areaR)"/>
+    <path d="M453 312 L1133 120 L1290 76" stroke="#2e5a26" stroke-width="7" fill="none" stroke-linecap="round"/>
+    <circle cx="453" cy="312" r="12" fill="#d9a940" stroke="#1d3a1a" stroke-width="3"/>
+    <circle cx="997" cy="120" r="13" fill="#b5483a"/><circle cx="1133" cy="120" r="13" fill="#2e5a26"/>
+    <path d="M1005 152 H1125" stroke="#1d3a1a" stroke-width="3" marker-end="url(#arr)"/>
+    <text x="1065" y="205" text-anchor="middle" font-family="Bebas Neue" font-size="54" fill="#1d3a1a">+6 YEARS</text>
+    <g font-family="Inter" font-weight="700" font-size="21">
+     <rect x="1010" y="270" width="440" height="140" rx="16" fill="#fffdf7" stroke="#e7dfca" stroke-width="2"/>
+     <path d="M1032 304 H1076" stroke="#b5483a" stroke-width="7" stroke-linecap="round"/><text x="1090" y="311" fill="#1c2418">High risk, untreated (LDL 4.0)</text>
+     <path d="M1032 342 H1076" stroke="#2e5a26" stroke-width="7" stroke-linecap="round"/><text x="1090" y="349" fill="#1c2418">Bergamot started early (−0.8)</text>
+     <path d="M1032 380 H1076" stroke="#a7a48f" stroke-width="5"/><text x="1090" y="387" fill="#1c2418">Average (LDL 3.0)</text>
+    </g>
+   </svg>
+   <div style="font-size:16px;color:#7b8170;margin-top:4px">Conceptual curves (LDL-C × years, mmol/L). Based on the cumulative-exposure principle: Ference 2012 &amp; 2017; Jacobs (i3C) 2022.</div>
+  </div>
+ </div>
+ <div>
+  <div class="ribbon" style="width:100%"><span>Who has been studied?</span></div>
+  <div class="card" style="margin-top:20px;padding:22px 26px">
+   <div style="display:grid;grid-template-columns:330px 1fr;gap:24px;align-items:center">
+    <svg viewBox="0 0 330 330" width="330" height="330">
+     <g transform="translate(165 165) rotate(-90)" fill="none" stroke-width="80">
+      <!-- C = 2*pi*115 = 722.6 ; 3/7=309.7, 2/7=206.5, 1/7=103.2 -->
+      <circle r="115" stroke="#2e5a26" stroke-dasharray="306 722.6"/>
+      <circle r="115" stroke="#b9852a" stroke-dasharray="203 722.6" stroke-dashoffset="-309.7"/>
+      <circle r="115" stroke="#b5483a" stroke-dasharray="100 722.6" stroke-dashoffset="-516.2"/>
+      <circle r="115" stroke="#5b7fa3" stroke-dasharray="100 722.6" stroke-dashoffset="-619.4"/>
+     </g>
+     <circle cx="165" cy="165" r="74" fill="#fffdf7"/>
+     <text x="165" y="168" text-anchor="middle" font-family="Bebas Neue" font-size="78" fill="#b5483a">0</text>
+     <text x="165" y="196" text-anchor="middle" font-family="Oswald" font-weight="600" font-size="17" fill="#1c2418">IN YOUNG</text>
+     <text x="165" y="216" text-anchor="middle" font-family="Oswald" font-weight="600" font-size="17" fill="#1c2418">PATIENTS</text>
+     <g font-family="Oswald" font-weight="600" font-size="28" fill="#fff" text-anchor="middle"><text x="250" y="230">43%</text><text x="92" y="250">29%</text><text x="70" y="128">14%</text><text x="125" y="74">14%</text></g>
+    </svg>
+    <div class="leg">
+     <div class="lg"><span class="dot" style="background:#2e5a26">3</span><span class="pc" style="color:#2e5a26">43%</span><span class="nm">High cholesterol<small>Gliozzi · Fogacci · Stonehouse</small></span></div>
+     <div class="lg"><span class="dot" style="background:#b9852a">2</span><span class="pc" style="color:#b9852a">29%</span><span class="nm">Overweight / metabolic<small>Capomolla · Rondanelli</small></span></div>
+     <div class="lg"><span class="dot" style="background:#b5483a">1</span><span class="pc" style="color:#b5483a">14%</span><span class="nm">Type 2 diabetes<small>Mollace</small></span></div>
+     <div class="lg"><span class="dot" style="background:#5b7fa3">1</span><span class="pc" style="color:#5b7fa3">14%</span><span class="nm">Fatty liver<small>Ferro</small></span></div>
+    </div>
+   </div>
+   <div class="note" style="margin-top:16px"><span class="ni"><svg width="32" height="32" viewBox="0 0 32 32"><circle cx="16" cy="16" r="14" fill="#b5483a"/><text x="16" y="23" text-anchor="middle" font-family="Oswald" font-weight="700" font-size="20" fill="#fff">!</text></svg></span><span>All 7 key bergamot RCTs were in <b>adults</b>; one found <b>no effect</b> (Stonehouse 2025). <b>No trial in young patients yet.</b></span></div>
+  </div>
+ </div>
+</section>
+
+<!-- =============== DETECT + RISK FACTORS =============== -->
+<section class="row2" style="grid-template-columns:1fr 1.55fr;margin-top:24px">
+ <div>
+  <div class="ribbon" style="width:100%"><span>Early risk detection</span></div>
+  <div class="card" style="margin-top:20px">
+   <div class="ch"><span class="ci"><svg width="34" height="34" viewBox="0 0 34 34"><circle cx="14" cy="14" r="9" stroke="#d9a940" stroke-width="4" fill="none"/><path d="M21 21 L30 30" stroke="#d9a940" stroke-width="4" stroke-linecap="round"/></svg></span><h4>Five checks in young patients<small>Spot the high-risk patient before damage builds</small></h4></div>
+   <div class="dl">
+    <div class="di"><div class="hex" style="width:64px;height:70px"><div style="width:56px;height:62px"><svg width="34" height="34" viewBox="0 0 34 34"><circle cx="11" cy="9" r="5" fill="#d9a940"/><circle cx="24" cy="9" r="5" fill="#d9a940"/><path d="M3 30c0-7 4-11 8-11s8 4 8 11M16 30c0-7 4-11 8-11s8 4 8 11" fill="#d9a940"/></svg></div></div><div><b>Family history</b>Premature heart disease in a close relative</div></div>
+    <div class="di"><div class="hex" style="width:64px;height:70px"><div style="width:56px;height:62px"><svg width="34" height="34" viewBox="0 0 34 34"><path d="M17 3c-4 6-9 11-9 17a9 9 0 0 0 18 0c0-6-5-11-9-17z" fill="#d9a940"/></svg></div></div><div><b>Lipid profile</b>LDL-C, triglycerides, HDL-C, apoB</div></div>
+    <div class="di"><div class="hex" style="width:64px;height:70px"><div style="width:56px;height:62px"><svg width="34" height="34" viewBox="0 0 34 34"><circle cx="17" cy="17" r="11" fill="#d9a940"/><circle cx="17" cy="17" r="4.5" fill="#1d3a1a"/></svg></div></div><div><b>Lipoprotein(a)</b>Genetically set; measure once</div></div>
+    <div class="di"><div class="hex" style="width:64px;height:70px"><div style="width:56px;height:62px"><svg width="34" height="34" viewBox="0 0 34 34"><path d="M11 2c0 10 12 10 12 15S11 22 11 32M23 2c0 10-12 10-12 15s12 5 12 15" stroke="#d9a940" stroke-width="3.5" fill="none"/></svg></div></div><div><b>Genetic risk score</b>Polygenic score; test for FH variants</div></div>
+    <div class="di"><div class="hex" style="width:64px;height:70px"><div style="width:56px;height:62px"><svg width="34" height="34" viewBox="0 0 34 34"><path d="M4 26 L12 16 L18 21 L30 6" stroke="#d9a940" stroke-width="4" fill="none" stroke-linecap="round"/></svg></div></div><div><b>Metabolic signs</b>Waist, blood pressure, glucose, liver fat</div></div>
+   </div>
+   <div class="paths">
+    <div class="pa a"><div class="pl">Hypothesis pathway</div><h5>High cholesterol, below statin criteria</h5>Lifestyle + <b>Citrus bergamot</b>; re-check every 6–12 months</div>
+    <div class="pa b"><div class="pl">Guideline care</div><h5>Monogenic FH / very high LDL</h5><b style="color:var(--gold2)">Statin as indicated.</b> Bergamot is not a substitute.</div>
+   </div>
+  </div>
+ </div>
+ <div>
+  <div class="ribbon" style="width:100%"><span>Bergamot across risk factors (adult RCTs)</span></div>
+  <div class="rgrid" style="margin-top:20px">
+   <div class="rk"><div class="ch"><span class="ci" style="width:54px;height:54px"><svg width="28" height="28" viewBox="0 0 28 28"><path d="M14 2c-3 5-8 9-8 14a8 8 0 0 0 16 0c0-5-5-9-8-14z" fill="#d9a940"/></svg></span><h4 style="font-size:28px">LDL-C<small>3 meta-analyses</small></h4></div>
+    <svg viewBox="0 0 380 190" width="100%" style="margin-top:12px">
+     <g font-family="Inter" font-size="16" font-weight="600" fill="#5d6553">
+      <rect x="20" y="40" width="80" height="138" rx="8" fill="#2e5a26"/><text x="60" y="30" text-anchor="middle" font-family="Oswald" font-size="26" fill="#1d3a1a">−55</text>
+      <rect x="150" y="78" width="80" height="100" rx="8" fill="#4f7d3a"/><text x="190" y="68" text-anchor="middle" font-family="Oswald" font-size="26" fill="#1d3a1a">−40</text>
+      <rect x="280" y="61" width="80" height="117" rx="8" fill="#b9852a"/><text x="320" y="51" text-anchor="middle" font-family="Oswald" font-size="26" fill="#1d3a1a">−47</text>
+     </g>
+    </svg>
+    <div class="s">mg/dL · 14 trials (2022) · 9 RCTs (2026) · network MA, #1 of 10 nutraceuticals</div>
+   </div>
+   <div class="rk"><div class="ch"><span class="ci" style="width:54px;height:54px"><svg width="28" height="28" viewBox="0 0 28 28"><circle cx="9" cy="14" r="6" fill="#d9a940"/><circle cx="20" cy="10" r="5" fill="#d9a940"/><circle cx="20" cy="21" r="4" fill="#d9a940"/></svg></span><h4 style="font-size:28px">TG &amp; HDL-C<small>pooled, 9 RCTs</small></h4></div>
+    <div class="big">−52 <small>mg/dL TG</small></div><div class="big" style="font-size:64px;color:var(--g3)">+5.6 <small>mg/dL HDL-C</small></div>
+    <div class="s">Chambari 2026</div>
+   </div>
+   <div class="rk"><div class="ch"><span class="ci" style="width:54px;height:54px"><svg width="28" height="28" viewBox="0 0 28 28"><rect x="6" y="4" width="16" height="20" rx="4" fill="none" stroke="#d9a940" stroke-width="3"/><path d="M10 14h8" stroke="#d9a940" stroke-width="3"/></svg></span><h4 style="font-size:28px">Glucose &amp; insulin<small>pooled, 9 RCTs</small></h4></div>
+    <div class="big">−12 <small>mg/dL glucose</small></div><div class="big" style="font-size:64px;color:var(--g3)">−0.38 <small>HOMA-IR</small></div>
+    <div class="s">Chambari 2026</div>
+   </div>
+   <div class="rk" style="border-top-color:var(--red)"><div class="ch"><span class="ci" style="width:54px;height:54px"><svg width="28" height="28" viewBox="0 0 28 28"><path d="M14 25s-11-6-11-14a6 6 0 0 1 11-3 6 6 0 0 1 11 3c0 8-11 14-11 14z" fill="#d9a940"/></svg></span><h4 style="font-size:28px">Blood pressure<small>pooled, 9 RCTs</small></h4></div>
+    <div class="big">−2.1 <small>mmHg systolic</small></div>
+    <div class="s" style="margin-top:12px">Small but consistent effect; certainty low to very low.</div>
+   </div>
+   <div class="rk" style="border-top-color:var(--gold)"><div class="ch"><span class="ci" style="width:54px;height:54px"><svg width="28" height="28" viewBox="0 0 28 28"><path d="M3 14 C 8 6, 20 6, 25 12 C 22 20, 10 22, 3 14Z" fill="#d9a940"/></svg></span><h4 style="font-size:28px">Fatty liver<small>Ferro 2020, n = 102</small></h4></div>
+    <svg viewBox="0 0 380 150" width="100%" style="margin-top:12px">
+     <g font-family="Inter" font-size="17" font-weight="600" fill="#1c2418">
+      <text x="0" y="40">Bergamot</text><rect x="110" y="20" width="250" height="30" rx="8" fill="#2e5a26"/><text x="352" y="42" text-anchor="end" fill="#fff" font-family="Oswald" font-size="20">−48 dB/m</text>
+      <text x="0" y="100">Placebo</text><rect x="110" y="80" width="140" height="30" rx="8" fill="#c9c1a8"/><text x="242" y="102" text-anchor="end" fill="#1c2418" font-family="Oswald" font-size="20">−27</text>
+     </g>
+    </svg>
+    <div class="s">Liver fat (CAP score), 12 weeks</div>
+   </div>
+   <div class="rk" style="border-top-color:#5b7fa3"><div class="ch"><span class="ci" style="width:54px;height:54px"><svg width="28" height="28" viewBox="0 0 28 28"><path d="M4 9 H24 M6 9 C 6 22, 22 22, 22 9" stroke="#d9a940" stroke-width="3" fill="none"/></svg></span><h4 style="font-size:28px">Waist &amp; inflammation<small>pooled + single RCTs</small></h4></div>
+    <div class="big">−1 <small>cm waist</small></div>
+    <div class="s" style="margin-top:10px">Less visceral fat (Rondanelli 2020); lower hs-CRP and better endothelial function (Fogacci 2022)</div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- =============== FLOW =============== -->
+<section style="margin-top:24px">
+ <div class="ribbon" style="width:1300px"><span>How to test the hypothesis</span></div>
+ <div class="flow">
+  <div class="fs"><div class="fi"><svg width="80" height="80" viewBox="0 0 80 80"><circle cx="28" cy="22" r="11" fill="#2e5a26"/><path d="M10 60c0-14 8-22 18-22s18 8 18 22" fill="#2e5a26"/><circle cx="56" cy="30" r="9" fill="#b9852a"/><path d="M42 64c0-11 6-18 14-18s14 7 14 18" fill="#b9852a"/></svg></div><div class="ft">Recruit</div><div class="fd">Young patients with high cholesterol</div></div>
+  <div class="fa">→</div>
+  <div class="fs"><div class="fi"><svg width="80" height="80" viewBox="0 0 80 80"><path d="M28 6c0 20 24 20 24 34S28 54 28 74M52 6c0 20-24 20-24 34s24 14 24 34" stroke="#2e5a26" stroke-width="6" fill="none"/></svg></div><div class="ft">Screen</div><div class="fd">Lipids, Lp(a), genetics, metabolic signs</div></div>
+  <div class="fa">→</div>
+  <div class="fs"><div class="fi"><svg width="80" height="80" viewBox="0 0 80 80"><path d="M40 8 V30 M40 30 L16 54 M40 30 L64 54" stroke="#2e5a26" stroke-width="6" fill="none" stroke-linecap="round"/><circle cx="16" cy="62" r="10" fill="#b5483a"/><circle cx="64" cy="62" r="10" fill="#a9be2c"/></svg></div><div class="ft">Sort</div><div class="fd">Monogenic FH → statin; others → trial</div></div>
+  <div class="fa">→</div>
+  <div class="fs"><div class="fi"><svg width="90" height="80" viewBox="-45 -40 90 80"><g transform="scale(.3) translate(-40 30)"><use href="#fruit"/></g><g transform="translate(26 6) rotate(-30)"><rect x="-18" y="-8" width="36" height="16" rx="8" fill="#c9c1a8"/><rect x="0" y="-8" width="18" height="16" rx="8" fill="#fff" stroke="#c9c1a8"/></g></svg></div><div class="ft">Randomise</div><div class="fd">Bergamot vs placebo, both with lifestyle advice</div></div>
+  <div class="fa">→</div>
+  <div class="fs"><div class="fi"><svg width="80" height="80" viewBox="0 0 80 80"><rect x="12" y="16" width="56" height="52" rx="8" fill="none" stroke="#2e5a26" stroke-width="5"/><path d="M12 30 H68" stroke="#2e5a26" stroke-width="5"/><path d="M26 8 v14 M54 8 v14" stroke="#2e5a26" stroke-width="5" stroke-linecap="round"/><text x="40" y="58" text-anchor="middle" font-family="Oswald" font-weight="700" font-size="22" fill="#b9852a">12 mo</text></svg></div><div class="ft">Follow up</div><div class="fd">Adherence, safety, growth</div></div>
+  <div class="fa">→</div>
+  <div class="fs"><div class="fi"><svg width="80" height="80" viewBox="0 0 80 80"><path d="M10 66 H70" stroke="#2e5a26" stroke-width="5"/><rect x="16" y="40" width="12" height="26" fill="#b9852a"/><rect x="34" y="28" width="12" height="38" fill="#4f7d3a"/><rect x="52" y="16" width="12" height="50" fill="#2e5a26"/></svg></div><div class="ft">Measure</div><div class="fd">LDL-C, apoB, glucose, BP, liver fat</div></div>
+  <div class="fa">→</div>
+  <div class="fs"><div class="fi" style="outline-color:var(--gold);background:#fbf2d8"><svg width="80" height="80" viewBox="0 0 80 80"><circle cx="40" cy="42" r="28" fill="none" stroke="#b9852a" stroke-width="5"/><path d="M40 24 V42 L54 50" stroke="#1d3a1a" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M30 6 h20" stroke="#b9852a" stroke-width="5" stroke-linecap="round"/></svg></div><div class="ft" style="color:var(--gold)">Long term</div><div class="fd">Time until statin is needed</div></div>
+ </div>
+</section>
+
+<!-- =============== CONCLUSION =============== -->
+<section style="margin-top:22px">
+ <div class="ribbon" style="width:900px"><span>Conclusion</span></div>
+ <p class="concl">Heart disease begins in youth. <b>Citrus bergamot</b> shows promising multi-target effects in adults, making it a strong candidate to test as an <b>early step that could delay statin therapy</b> in young patients with high cholesterol.</p>
+</section>
+
+<div class="foot">
+ <svg style="position:absolute;left:-20px;bottom:-10px" width="300" height="300" viewBox="0 0 360 360">
+  <path d="M0 360 C 60 260, 120 200, 260 120" stroke="#5a4630" stroke-width="12" fill="none"/>
+  <use href="#leaf" transform="translate(70 270) rotate(-80) scale(1.3)"/><use href="#leaf" transform="translate(120 220) rotate(-20) scale(1.2)"/><use href="#leaf" transform="translate(180 170) rotate(-100) scale(1.1)"/><use href="#leaf" transform="translate(230 140) rotate(-10) scale(1.1)"/>
+  <g transform="translate(160 260) scale(.6)" filter="url(#sh)"><use href="#fruit"/></g>
+ </svg>
+ <div class="safety"><b>SAFETY NOTE</b><br>Citrus bergamot is a dietary supplement, not an approved therapy. Young patients who meet statin criteria, including monogenic FH, should follow guideline care.</div>
+ <div class="qrl"><b>Scan for all<br>18 references</b><span>Full citations with DOI links</span></div>
+ <div class="qr">{{QR}}</div>
+</div>
+</body>
+</html>

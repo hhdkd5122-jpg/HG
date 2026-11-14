@@ -1,0 +1,5 @@
+t=open('template.html').read()
+m1=open('mol1.svgfrag').read()
+qr=open('qr.svg').read().replace('<svg ','<svg width="210" height="210" ',1)
+t=t.replace('{{MOL1}}',m1).replace('{{MOL1W}}',m1.replace('<text','<text fill="#e8f0c8" stroke="none"')).replace('{{QR}}',qr)
+open('poster.html','w').write(t)
