@@ -29,7 +29,7 @@ A study following more than **38,000 people for 35 years** found that risk facto
 
 Cholesterol doesn't hurt you once. It hurts you **every single year.**
 This chart shows why timing matters.
-*(grey bar)* When adults take a statin for about five years, each 1 mmol/L drop in LDL cuts risk by about **22%**.
+*(grey bar)* When adults take a statin for about five years, each 1 mmol/L drop in LDL cuts heart attacks and strokes by about **22%**.
 *(green bar)* But people born with genes that keep their LDL low **for their whole life** get about **55% less coronary disease** for the same 1 mmol/L.
 Same cholesterol drop, **more than double the benefit**, just because it started early and lasted longer.
 **The earlier you start, the less you need.**
