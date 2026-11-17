@@ -1,6 +1,7 @@
 # Before the Statin: 4-minute poster script
 
-**Noor Al Ahmad · Department of Pharmacy, Al Ain University**
+**Noor Al Ahmad · Supervised by Dr Amira · Department of Pharmacy, Al Ain University**
+Matches the Canva poster *Bergamot_Poster_90x150cm*.
 About 540 words, roughly 4 minutes at a calm pace. *Italic lines in brackets are actions, not words.* **Bold** = slow down and land it.
 
 ---
@@ -24,14 +25,13 @@ This isn't a disease of old age. It's a disease that **starts young and shows up
 A study following more than **38,000 people for 35 years** found that risk factors in childhood predicted heart attacks and strokes in adulthood.
 
 ### 3. Time is the real risk factor (1:00–1:40)
-*(Point to the graph and trace each line.)*
+*(Point to "The principle behind the hypothesis" bar chart.)*
 
 Cholesterol doesn't hurt you once. It hurts you **every single year.**
-Think of a bucket filling drop by drop.
-*(red dashed line)* When it fills to here, heart disease begins.
-*(orange line)* Leave a high-risk young patient alone, and they reach it around **40.**
-*(green line)* Lower the drip early, even a little, and they reach it about **six years later.**
-This graph is a model, but the principle is real: genetic studies show that lower LDL from early life means about **55% less coronary disease**, around three times the benefit of starting later.
+This chart shows why timing matters.
+*(grey bar)* When adults take a statin for about five years, each 1 mmol/L drop in LDL cuts risk by about **22%**.
+*(green bar)* But people born with genes that keep their LDL low **for their whole life** get about **55% less coronary disease** for the same 1 mmol/L.
+Same cholesterol drop, **more than double the benefit**, just because it started early and lasted longer.
 **The earlier you start, the less you need.**
 
 ### 4. Find them early (1:40–2:05)
@@ -48,15 +48,15 @@ But many others sit in a **grey zone**: cholesterol too high to ignore, too low 
 Meet **Citrus bergamot**, a bitter green citrus from Calabria, in southern Italy.
 Here's what makes it interesting: two of its compounds, brutieridin and melitidin, have a statin-like structure and may act on **the very same enzyme that statins block**, HMG-CoA reductase.
 And remember, statins themselves came from nature: the first one was found in a fungus.
-*(Point to the effects table.)*
-In adult trials, bergamot lowered LDL by about **40 mg/dL**. It also lowered triglycerides, blood sugar and blood pressure, and reduced waist size, and in one trial, liver fat.
+*(Point to the forest plot in "Bergamot effects in adult RCTs".)*
+In a meta-analysis of nine adult trials, bergamot lowered LDL by about **40 mg/dL**, and every one of these confidence intervals stays clear of zero. It also lowered triglycerides, blood sugar and blood pressure, and reduced waist size, and in one trial, liver fat.
 **One fruit, several risk factors**, the same cluster that drives early heart disease.
 
 ### 6. What we still need to prove (2:50–3:25)
 *(Point to Who has been studied? Say it with confidence.)*
 
 Now, a good scientist tells you what's **missing**.
-Look at this chart. Every key bergamot trial so far was in **adults**. The number in the middle is the one that matters: **zero trials in young patients.**
+Look at this chart. Seven key bergamot trials, in people with high cholesterol, metabolic syndrome, diabetes and fatty liver. All **adults**. And look at the last row: *(point to "Young patients 0")* **zero trials in young patients.**
 The evidence is still low certainty, many trials were small, and one found no effect at all.
 *(Point to the Statin vs bergamot table.)*
 So bergamot is not a statin. It's gentler and less proven. That's exactly why it might fit **before** a statin, not instead of one.
@@ -92,13 +92,13 @@ Gentler. About 40 mg/dL in adult studies, while statins usually lower LDL by 30�
 **"Is it safe?"**
 Adult trials reported it was well tolerated. Safety in young people still has to be studied, which is why the trial includes liver, muscle and growth checks.
 
-**"Is the graph real data?"**
-It's a model of a proven principle: the earlier LDL is lowered, the later heart disease appears.
+**"Where do the 22% and 55% come from?"**
+22% is from the CTT meta-analysis of 26 statin trials (Lancet 2010), per 1 mmol/L lower LDL. 55% is from Ference 2012, a Mendelian randomization study of people with genetically lower LDL from birth.
 
 ---
 
 ### Delivery tips
 - **Hold the pause after "Come back later"** for two seconds.
-- **Point to the "0" in the donut** when you say "zero trials in young patients". It's your strongest visual.
+- **Point to the "Young patients: 0" row** in the Who has been studied? chart when you say "zero trials in young patients". It's your strongest visual.
 - Practise with a timer. If you run long, shorten section 5 first.
 - **End on "I believe it's worth finding out."** Pause before "thank you."
