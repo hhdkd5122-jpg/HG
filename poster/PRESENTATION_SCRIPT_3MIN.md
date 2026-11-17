@@ -31,13 +31,14 @@ Cholesterol hurts you **every single year.**
 *(Point to Early risk detection.)*
 
 We find these patients with five checks: family history, lipids, Lp(a), genetic testing and metabolic signs.
-Monogenic FH goes straight to a statin. But many young patients sit in a **grey zone**: too high to ignore, too low for a statin. That's who this idea is for.
+Young patients with monogenic FH go straight to guideline care with a statin; bergamot is not a substitute for them. But many young patients sit in a **grey zone**: too high to ignore, too low for a statin. That's who this idea is for.
 
 ### 5. Why bergamot? (1:30–2:05)
 *(Point to the mechanism diagram, then the forest plot.)*
 
-**Citrus bergamot** is a citrus from southern Italy. Two of its compounds may act on **the same enzyme statins block.**
-In nine adult trials, it lowered LDL by about **40 mg/dL**, and also lowered triglycerides, blood sugar and blood pressure.
+**Citrus bergamot** is a bitter green citrus from Calabria, in southern Italy. Two of its compounds, brutieridin and melitidin, have a statin-like structure and may act on **the same enzyme statins block**, HMG-CoA reductase.
+And statins themselves came from nature: the first one was found in a fungus.
+In a meta-analysis of nine adult trials, it lowered LDL by about **40 mg/dL**, and also lowered triglycerides, blood sugar, blood pressure and waist size, and in one trial, liver fat.
 **One fruit, several risk factors.**
 
 ### 6. What we still need to prove (2:05–2:35)
@@ -45,7 +46,7 @@ In nine adult trials, it lowered LDL by about **40 mg/dL**, and also lowered tri
 
 But a good scientist tells you what's missing. Every key trial was in adults: **zero in young patients.** The evidence is low certainty, and one trial found no effect.
 So bergamot is gentler and less proven than a statin. That's why it fits **before** a statin, not instead of one.
-*(Point to How to test the hypothesis.)* The next step is a trial, and the key outcome: **how long until they need a statin?**
+*(Point to How to test the hypothesis.)* The next step is a trial: screen young patients, randomise them to bergamot or placebo for a year, and measure LDL, glucose, blood pressure and liver fat. And in the long run, the key question: **how long until they need a statin?**
 
 ### 7. The close (2:35–3:00)
 *(Step toward the audience and slow down.)*
